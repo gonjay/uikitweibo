@@ -1,0 +1,232 @@
+<link rel="stylesheet" type="text/css" href="assets/styles/index/index.css"/>
+
+<div class="wrap">
+  <div class="container">
+    <div class="main pull-left">
+      <div class="hotSale">
+        <div class="saleTitle fL">校园特卖:</div>
+        <div class="saleList fL">
+          <ul class="saleListUl">
+            <li class="item fL">
+              <a href="#" class="keyHref">娃哈哈</a>
+            </li>
+            <li class="item fL">
+              <a href="#" class="keyHref">每天10点</a>
+            </li>
+            <li class="item fL">
+              <a href="#" class="keyHref">确保低价</a>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="modelList">
+        <ul class="modelListUl">
+          <li class="item">
+            <div class="itemCont">
+              <div class="modelInfo fL">
+                <div class="infoTitle">
+                  <a href="officialnews" class="titleHref news">官方新闻</a>
+                </div>
+                <div class="infoCont">
+                  <% @officialnews.each do |news| %>
+
+                    <div class="newsItem">
+                    <a href="<%= passage_path(news) %>" class="newsHref"><%= news.title[0,14] %></a>
+                    </div>
+
+                  <% end %>
+                </div>
+              </div>
+              <div class="modelPic fR">
+                <img src="assets/images/index/pic01.jpg" class="picture" />
+              </div>
+              <div class="clear"></div>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="itemCont">
+              <div class="modelInfo fL">
+                <div class="infoTitle">
+                  <a href="schoolbully" class="titleHref study">学霸专区</a>
+                </div>
+                <div class="infoCont">
+                  <% @schoolbully.each do |news| %>
+
+                    <div class="newsItem">
+                    <a href="<%= passage_path(news) %>" class="newsHref"><%= news.title[0,14]  %></a>
+                    </div>
+
+                  <% end %>
+                </div>
+              </div>
+              <div class="modelPic fR">
+                <img src="assets/images/index/pic02.jpg" class="picture" />
+              </div>
+              <div class="clear"></div>
+            </div>
+          </li>
+
+
+          <li class="item">
+            <div class="itemCont">
+              <div class="modelInfo fL">
+                <div class="infoTitle">
+                  <a href="growthbook" class="titleHref growUp">成长手册</a>
+                </div>
+                <div class="infoCont">
+                  <% @growthbook.each do |news| %>
+
+                    <div class="newsItem">
+                    <a href="<%= passage_path(news) %>" class="newsHref"><%= news.title[0,14]  %></a>
+                    </div>
+
+                  <% end %>
+                </div>
+              </div>
+              <div class="modelPic fR">
+                <img src="assets/images/index/pic03.jpg" class="picture" />
+              </div>
+              <div class="clear"></div>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="itemCont">
+              <div class="modelInfo fL">
+                <div class="infoTitle">
+                  <a href="hersay" class="titleHref message">小道消息</a>
+                </div>
+                <div class="infoCont">
+                  <% @hearsay.each do |news| %>
+                    <div class="newsItem">
+                    <a href="<%= passage_path(news) %>" class="newsHref"><%= news.title[0,14]  %></a>
+                    </div>
+
+                  <% end %>
+                </div>
+              </div>
+              <div class="modelPic fR">
+                <img src="assets/images/index/pic04.jpg" class="picture" />
+              </div>
+              <div class="clear"></div>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="itemCont">
+              <div class="modelInfo fL">
+                <div class="infoTitle">
+                  <a href="#" class="titleHref sns">社区乐园</a>
+                </div>
+                <div class="infoCont">
+                  <div class="newsItem">
+                    <a href="#" class="newsHref">学姐血的教训，不管大几都应该看看</a>
+                  </div>
+                  <div class="newsItem">
+                    <a href="#" class="newsHref">告白被拒求安慰</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modelPic fR">
+                <img src="assets/images/index/pic05.jpg" class="picture" />
+              </div>
+              <div class="clear"></div>
+            </div>
+          </li>
+
+        </ul>
+        
+      </div>
+
+    </div>
+
+    <div class="sideBar pull-right">
+      <div class="sideBarTitle">新生快递通道</div>
+      <div class="sideBarCont">
+        <div class="sideBarItem date">
+          <div class="itemCont">
+            <div id="datePicker" class="datePicker fL">
+            </div>
+            <div class="dateInfo fL">
+              <span class="infoWeek">第<em class="weekNum">18</em>周</span>
+              <span class="infoDate">20/2</span>
+              <span class="infoWweekDay">星期三</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+
+        <div class="sideBarItem">
+          <div class="itemCont">
+            <a href="#" class="studentEnter">新生入口</a>
+          </div>
+        </div>
+
+        <div class="sideBarItem">
+          <div class="itemCont">
+            <div class="form-inline referForm score">
+              <input type="text" class="input referKey">
+              <a href="javascript:void(0);" class="btn referBtn">查询</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sideBarItem">
+          <div class="itemCont">
+            <div class="form-inline referForm schedule">
+              <input type="text" class="input referKey">
+              <a href="javascript:void(0);" class="btn referBtn">查询</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sideBarItem">
+          <div class="itemCont">
+            <div class="form chargeForm">
+              <div class="fmItem">
+                <div class="fmItemLable fL">充值手机:</div>
+                <div class="fmItemCont fL">
+                  <input type="text" class="input phoneNo fL">
+                </div>
+                <div class="clear"></div>
+              </div>
+
+              <div class="fmItem">
+                <div class="fmItemLable fL">充值面额:</div>
+                <div class="fmItemCont fL">
+                  <div class="amountList">
+                    <input type="hidden" class="input fL">
+                    <span class="amount fL">30</span>
+                    <span class="amount fL">50</span>
+                    <span class="amount fL currAmount">100</span>
+                    <span class="amount fL">200</span>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+
+              <div class="fmItem">
+                <div class="fmItemLable fL">充值价格:</div>
+                <div class="fmItemCont fL">
+                  <span class="price">98~99.95</span>
+                </div>
+                <div class="clear"></div>
+              </div>
+
+              <div class="fmItem">
+                <a href="javascript:void(0);" class="btn referBtn">立即充值</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

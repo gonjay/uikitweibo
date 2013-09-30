@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+#footer{
+	display:block;
+	background:#dadee1;
+	padding-bottom:20px;
+}
+
+.footer .container{
+}
+
+.footer .linkList{
+	border-top:1px solid #ffffff;
+	margin-top:10px;
+}
+
+.footer .linkList .linkListUl{
+	padding-top:5px;
+	margin:0px;
+}
+
+.footer .linkList .item{
+	width:100px;
+}
+
+.footer .linkList .item .itemCont{
+}
+
+.footer .linkList .item .itemCont .linkHref{
+	display:block;
+	height:20px;
+	line-height:20px;
+	color:#666;
+	text-align:center;
+}
+
+.footer .linkList .divider{
+	width:7px;
+}
+
+.footer .linkList .divider .itemCont{
+}
+
+.footer .linkList .divider .itemCont .dividerTxt{
+	
+}
+
+.footer .siteInfo{
+	margin-top:10px;
+}
+
+.footer .siteInfo .infoTxt{
+	display:block;
+	text-align:center;
+}
+
+
+
+
+.footer .siteTail{
+	border-top:1px solid #ffffff;
+}
+.footer .siteTail .siteTailCont{
+	border:4px solid #e7e7e7;
+	background:#ffffff;
+	height:160px;
+	padding:10px;
+	margin-top:10px;
+}
+
+.footer .siteTail .help{
+	width:615px;
+}
+
+.footer .siteTail .help .item{
+}
+
+.footer .siteTail .help .delivery{
+	background:url(images/info_003.gif) 0px 10px no-repeat;
+}
+
+.footer .siteTail .help .pay{
+	background:url(images/info_004.gif) 0px 10px no-repeat;
+}
+
+.footer .siteTail .help .service{
+	background:url(images/info_005.gif) 0px 10px no-repeat;
+}
+
+.footer .siteTail .help .special{
+	background:url(images/info_006.gif) 0px 10px no-repeat;
+}
+
+.footer .siteTail .help .title{
+	height:35px;
+	line-height:35px;
+	text-indent:40px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.footer .siteTail .help .content{
+	padding-left:40px;
+}
+
+.footer .siteTail .help .content a{
+	margin-top:3px;
+}
+
+.footer .siteTail .schoolInfo{
+	background:url(images/map_01.gif) center center no-repeat;
+	width:305px;
+}
+
+.footer .siteTail .schoolInfo .infoTitle{
+	height:35px;
+	line-height:35px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.footer .siteTail .schoolInfo .infoCont{
+	height:95px;
+	line-height:25px;
+}
+
+.footer .siteTail .schoolInfo .infoTail{
+}
+
+.footer .siteTail .schoolInfo .infoTail .mainPageTitle{
+	background:url(images/info_007.gif) 0px 3px no-repeat;
+	width:80px;
+	height:20px;
+	line-height:18px;
+	text-indent:15px;
+}
+
+.footer .siteTail .schoolInfo .infoTail .mainPageHref{
+	width:140px;
+	height:20px;
+	line-height:18px;
+}

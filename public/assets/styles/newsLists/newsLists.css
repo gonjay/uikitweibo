@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{margin:0; padding:0;}
+body{ color: #666666;
+      font-family: 微软雅黑;
+      font-size: 12px;
+
+}
+.wrap{
+	background:url(images/bg_01.jpg) center 0px no-repeat #dadee1;
+	height:885px;
+}
+
+.wrap .container{
+	/*border:1px solid #ccc;*/
+	/*min-height:560px;*/
+	padding-top:10px;
+	padding-bottom:10px;
+	width:960px;
+}
+
+
+/* 主要内容 --- start*/
+#bg{width:175px; height:760px; background:url(images/leftSide.png); margin-top:-315px;}
+
+#coin4{ margin-top:-8px;}
+
+.item{line-height: 20px; float:left;}
+
+#mainContainer{ background:#FFFFFF; width:935px; height:785px; margin:0px 12px 12px 12px;}
+
+#mainContain{width:916px; height:785px; margin-left:15px;}
+#middlebk{width:680px;height:785px; margin-left:28px; color:#000; font-size:12px; line-height:22px; font-family:宋体;}
+#middlebk p{ border-bottom:dotted 1px #000000; line-height:25px; margin-top:-10px;}
+#middlebk a{color:#000}
+
+
+#firstPage{ margin-left:160px;}
+
+.page{ width:20px; height:25px; background:#E0E0E0; float:left; margin-left:5px; text-align:center; color:#FFF; font-family:  sans-serif; font-weight:bold; font-size:14px; margin-top:20px;padding-top:5px; }
+.page:hover{ background:#B10100;}
+
+
+.keyHref{ color: #333333;
+          display: block;
+          font-size: 16px;
+          height: 23px;
+          line-height: 23px;
+          margin-left: 10px;
+}
+
+#lastPage{ width:65px; height:25px; background:#E0E0E0; float:left; margin-left:5px; text-align:center; padding-top:5px; color:#FFF; font-family:  sans-serif; font-weight:bold; font-size:12px; margin-top:20px;}
+#lastPage:hover{ background:#B10100;}
+#lastPara{ line-height:25px; margin-top:-10px;}
+
+#line{margin-left:28px; margin-bottom:20px}
+#ltBorder{ width:13px; height:395px; float:left}
+#leftside{ width:175px; height:785px;float:left;}
+
+#rtBorder{ width:13px; height:395px; float:right}
+#rightside{ width:735px;height:775px;float:right; border-left:dotted 1px #000000; margin-top:5px;}
+
+#topBorder{ height:12px; width:960px;}
+#topbk{ width:685px; height:40px; margin-left:28px; color:#000;}
+.transparent{background:#999;opacity:0.3}
+#topTime{ margin-top:10px}
+
+.saleTitle{ color: #B20000;
+            height: 23px;
+            line-height: 23px;
+			font-size: 18px;
+		    float:left
+}
+
+.saleListUl{margin: 0;}
+#school_sale{ padding-bottom:10px;}
+#sideNav{width:150px; height:295px; background:#FFF; line-height:40px; text-align:center; margin-top:40px;font-size:14px;letter-spacing:2px;}
+#sideNav a{color:#000; }
+span7{ float:right; width:165px; font-size:12px; color:#999;line-height:10px;}
+span1{ font-family:微软雅黑; color:#010101; font-size:18px;letter-spacing:3px; font-weight:bold; line-height:65px;}
+span2{ font-size:18px; color:#010101; letter-spacing:2px; line-height:45px;}
+span3{ float:right; padding-top:20px; padding-right:6px; font-size:12px}
+span4{ color:#8F0206}
+span5{ font-size:16px; line-height:60px; font-weight:bold}
+span6{ font-size:12px;line-height:20px;}
+
+#xlh{ width:20px; height:25px; background:#FFF; float:left; margin-left:5px; text-align:center; color:#E0E0E0; font-family:  sans-serif; font-weight:bold; font-size:14px; margin-top:20px;}
+

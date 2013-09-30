@@ -1,0 +1,108 @@
+<header id="header">
+    <div class="headerCont">
+      <!-- 网站信息及快捷接口  start -->
+      <div class="row topBar">
+        <div class="container">
+		  <span class="pull-right">
+            <span class="">亲，欢迎来到湖工大！ 请</span>
+            <a href="#" class="white" rel="nofollow">登录</a>
+            <span class="">&nbsp;&nbsp;</span>
+            <a href="#" class="white" rel="nofollow">注册</a>
+          </span>
+        </div>
+      </div>
+      <!-- 网站信息及快捷接口  end -->
+    
+      <!-- logo and search   start -->
+      <div class="row siteHeader">
+        <div class="container">
+          <!-- logo   start -->
+          <div id="logo" class="logo">
+            <div class="logoCont">
+              <a href="#" class="logoHref fL">hgd.org.cn</a>
+              <span class="logoDesc fL">在湖工,在一起</span>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <!-- logo   end -->
+          <!-- search form   start -->
+          <div class="headSearch">
+            <div class="form-inline searchForm">
+              <input type="text" class="input searchKey fL">
+              <a href="javascript:void(0);" class="btn srarchBtn fL">搜索</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <!-- search form   end -->
+        </div>
+      </div>
+      <!-- logo and search   end -->
+    
+      <!-- navi   start -->
+      <div class="row navi">
+        <div class="container">
+          <div class="naviCont">
+            <ul class="navUL">
+              <li class="item fL <%= 'active' if @nav == 1 %>">
+                <div class="itemCont">
+                  <a href="<%= index_path %>" class="navHref">首页</a>
+                </div>
+              </li>
+              <li class="item fL divider">
+                <div class="itemCont">
+                  <span class="dividerTxt">|</span>
+                </div>
+              </li>
+              <li class="item fL <%= 'active' if @nav == 2 %>">
+                <div class="itemCont">
+                  <a href="<%= officialnews_path %>" class="navHref">官方新闻</a>
+                </div>
+              </li>
+              <li class="item fL divider">
+                <div class="itemCont">
+                  <span class="dividerTxt">|</span>
+                </div>
+              </li>
+              <li class="item fL <%= 'active' if @nav == 3 %>">
+                <div class="itemCont">
+                  <a href="<%= schoolbully_path %>" class="navHref">学霸学渣</a>
+                </div>
+              </li>
+              <li class="item fL divider">
+                <div class="itemCont">
+                  <span class="dividerTxt">|</span>
+                </div>
+              </li>
+              <li class="item fL <%= 'active' if @nav == 4 %>">
+                <div class="itemCont">
+                  <a href="<%= growthbook_path %>" class="navHref">成长手册</a>
+                </div>
+              </li>
+              <li class="item fL divider">
+                <div class="itemCont">
+                  <span class="dividerTxt">|</span>
+                </div>
+              </li>
+              <li class="item fL <%= 'active' if @nav == 5 %>">
+                <div class="itemCont">
+                  <a href="<%= hersay_path %>" class="navHref">小道消息</a>
+                </div>
+              </li>
+              <li class="item fL divider">
+                <div class="itemCont">
+                  <span class="dividerTxt">|</span>
+                </div>
+              </li>
+              <li class="item fL">
+                <div class="itemCont">
+                  <a href="#" class="navHref">社区乐园</a>
+                </div>
+              </li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <!-- navi   end -->
+    </div>
+  </header>

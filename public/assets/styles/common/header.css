@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+#header{
+	display:block;
+	background:url(images/header_bg_01.gif) 0px 0px repeat-x;
+	margin:0 auto;
+}
+
+#header .headerCont{
+	display:block;
+	background:url(images/header_bg.png) center 21px no-repeat;
+	height:154px;
+}
+
+/* top nav --- start */
+.topBar{
+	/*border:1px solid #ccc;*/
+	height:20px;
+	line-height:25px;
+	color:#ffffff;
+	padding-top:10px;
+}
+
+.topBar a{
+	color:#ffffff;
+}
+/* top nav --- end */
+
+
+.siteHeader{
+	/*border:1px solid #ccc;*/
+	height:90px;
+}
+.siteHeader .container{
+	position:relative;
+}
+
+/* top logo --- start */
+.siteHeader .logo{
+	height:48px;
+	
+	position:absolute;
+	top:21px;
+	left:0px;
+}
+
+.siteHeader .logo .logoCont{
+}
+
+.siteHeader .logo .logoCont .logoHref{
+	display:block;
+	background:url(images/logo_01.png) 0px 0px no-repeat;
+	width:179px;
+	height:48px;
+	text-indent:-9999px;
+}
+
+.siteHeader .logo .logoCont .logoDesc{
+	display:block;
+	width:170px;
+	height:25px;
+	color:#ffffff;
+	font-family:"隶书";
+	font-size:24px;
+	
+	padding-top:28px;
+	padding-left:8px;
+}
+/* top logo --- end */
+
+/* search form --- end */
+.siteHeader .headSearch{
+	height:48px;
+	
+	position:absolute;
+	top:25px;
+	right:0px;
+}
+
+.siteHeader .searchForm{
+}
+
+.siteHeader .searchForm .searchKey{
+	display:block;
+	width:220px;
+	height:25px;
+	box-shadow:0px 0px 3px #ffffff;
+	padding: 0px 6px 0px 6px;
+}
+
+.siteHeader .searchForm .srarchBtn{
+	display:block;
+	border:none;
+	background:url(images/search_btn_01.gif) 0px 0px no-repeat;
+	width:53px;
+	height:26px;
+	border-radius:0px;
+	text-indent:-9999px;
+	padding:0px;
+	margin:0px 0px 0px 5px;
+}
+
+.siteHeader .searchForm .srarchBtn:hover{
+	background:url(images/search_btn_02.gif) 0px 0px no-repeat;
+}
+/* search form --- end */
+
+
+
+
+/* navi --- start */
+.navi{
+	background:#8f0006;
+	height:35px;
+}
+
+.navi .naviCont{
+}
+
+.navi .naviCont .navUL{
+	margin:0px;
+}
+
+.navi .naviCont .item{
+	line-height:35px;
+}
+
+.navi .naviCont .active{
+}
+
+.navi .naviCont .divider{
+	width:10px;
+}
+
+.navi .naviCont .item .itemCont{
+}
+
+.navi .naviCont .item .itemCont .navHref{
+	display:block;
+	width:100px;
+	height:34px;
+	text-align:center;
+	color:#ffffff;
+	font-size:14px;
+}
+
+.navi .naviCont .item .itemCont .navHref:hover{
+}
+
+.navi .naviCont .active .itemCont .navHref{
+	background:#6a0000;
+	font-weight:bold;
+}
+
+.navi .naviCont .item .itemCont .dividerTxt{
+	display:block;
+	width:10px;
+	color:#bd2626;
+	text-align:center;
+}
+.navUL a{text-decoration:none;
+display:block;}
+.navUL a:hover{background:#6a0000;}
+/* navi --- end */
+
+
+
+
+
+

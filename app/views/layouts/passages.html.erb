@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hgd</title>
+	<link rel="stylesheet" type="text/css" href="<%= root_path %>assets/lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="<%= root_path %>assets/styles/common/default.css"/>
+	<link rel="stylesheet" type="text/css" href="<%= root_path %>assets/styles/common/header.css"/>
+	<link rel="stylesheet" type="text/css" href="<%= root_path %>assets/styles/common/footer.css"/>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+
+	<%= render 'layouts/header' %>
+
+	<%= yield %>
+
+	<%= render 'layouts/footer' %>
+
+</body>
+</html>

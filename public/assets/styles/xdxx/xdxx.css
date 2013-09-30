@@ -1,0 +1,365 @@
+@charset "utf-8";
+.wrap {
+	height: 1250px;
+	background: url(../../images/xdxx/bg.gif) center 0px no-repeat #dedee1;
+	margin: 0 auto;
+}
+/* 主要内容 --- start */
+.main {
+	width: 617px;
+	margin-top: 15px;
+	margin: 0;
+	padding: 0;
+}
+.main .hotSale {
+	font-size: 18px;
+}
+.main .hotSale .saleTitle {
+	color: #b20000;
+	height: 23px;
+	line-height: 23px;
+	font-style: italic;
+}
+.main .hotSale .saleList .saleListUl {
+	margin: 0px;
+}
+.main .hotSale .saleList .item {
+}
+.main .hotSale .saleList .item .keyHref {
+	display: block;
+	height: 23px;
+	line-height: 23px;
+	color: #333;
+	font-size: 16px;
+	margin-left: 10px;
+}
+.main .hotSale .saleList .item .keyHref:hover {
+	color: #b20000;
+}
+#centerTop {
+	width: 962px;
+	height: 23px;
+	margin: 0 auto;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	overflow: hidden;
+	float:left;
+}
+#center {
+	position: relative;
+	height: 1244px;
+	width: 962px;
+	margin: 0 auto;
+}
+#centerMain {
+	overflow: hidden;
+	height: 1185px;
+	width: 962px;
+	background: #e1e1e1;
+	margin: 0 auto;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	float:left;
+}
+#centerMain_1 {
+	height: 1171px;
+	background: #efefef;
+	width: 935px;
+	margin: 0 auto;
+	margin-top: 13px;
+	overflow: hidden;
+}
+#centerMain_2 {
+	height: 1155px;
+	width: 919px;
+	margin-top: 10px;
+	background: #e1e1e1;
+	position: absolute;
+	left: 21px;
+	top: 60px;
+}
+#centerContent_left {
+	width: 667px;
+	height: 1153px;
+	float: left;
+}
+#centerContent_right_top {
+	height: 143px;
+	width: 252px;
+	float: right;
+}
+#centerContent_right_center {
+	height: 223px;
+	width: 252px;
+	float: right;
+}
+#centerContent_right_bottom {
+	height: 412px;
+	width: 252px;
+	float: right;
+	margin-top: 38px;
+}
+.user_one {
+	height: 375px;
+	width: 667px;
+	position: relative;
+}
+.userPicture_one {
+	background: url(../../images/xdxx/6_03.gif) 0px 0px no-repeat;
+}
+.userPicture {
+	position: absolute;
+	height: 82px;
+	width: 81px;
+	left: 17px;
+	top: 19px;
+}
+.userContent {
+	position: absolute;
+	background: #fff;
+ filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090, direction=120, strength=4);/*ie*/
+	-moz-box-shadow: 0px 0px 5px #909090;/*firefox*/
+	-webkit-box-shadow: 0px 0px 5px #909090;/*safari或chrome*/
+	box-shadow: 0px 0px 5px #909090;/*opera或ie9*/
+}
+.userC1 {
+	display: block;
+	height: 357px;
+	width: 533px;
+	left: 124px;
+	top: 11px;
+}
+.uc {
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.uc1 {
+	height: 346px;
+	width: 502px;
+}
+.sharp {
+	background: url(../../images/xdxx/6_27.gif);
+	width: 18px;
+	height: 22px;
+	position: absolute;
+}
+.s1 {
+	left: 106px;
+	top: 39px;
+}
+.yuanjiao {
+	background: url(../../images/xdxx/6_24.gif);
+	width: 36px;
+	height: 35px;
+	position: absolute;
+}
+.y1 {
+	left: 621px;
+	top: 10px;
+}
+#ucc1 {
+	width: 502px;
+	height: 299px;
+	border-bottom: 2px dashed #cccccc;
+	overflow: hidden;
+}
+.btnTocao .btnT {
+	background: url(../../images/xdxx/6_32.gif) 0px 0px no-repeat;
+	display: block;
+	border: none;
+	width: 64px;
+	height: 29px;
+	border-radius: 0px;
+	text-indent: -9999px;
+	padding: 0px;
+	margin: 10px 0px 0px 0px;
+}
+.btnTocao .btnT:hover {
+	background: url(../../images/xdxx/6_18.gif) 0px 0px no-repeat;
+}
+.btnTocao {
+	float: left;
+}
+.message {
+	width: 184px;
+	height: 20px;
+	float: right;
+	margin-top: 15px;
+}
+.mg {
+	color: #cdbbbb;
+	font-size: 14px;
+	font-family: "Microsoft YaHei UI";
+	margin-left: 10px;
+	float: left
+}
+.heart {
+	display: block;
+	border: none;
+	width: 18px;
+	height: 16px;
+	border-radius: 0px;
+	text-indent: -9999px;
+	background: url(../../images/xdxx/1_24.gif);
+	float: right
+}
+.heart:hover {
+	background: url(../../images/xdxx/1_243.gif)
+}
+.user_two {
+	width: 667px;
+	height: 170px;
+	position: relative;
+}
+#ucc2 {
+	width: 502px;
+	height: 83px;
+	border-bottom: 2px dashed #cccccc;
+	overflow: hidden;
+}
+.uc2 {
+	width: 502px;
+	height: 126px;
+}
+.userC2 {
+	display: block;
+	height: 150px;
+	width: 533px;
+	left: 124px;
+	top: 11px;
+}
+.userPicture_two {
+	background: url(../../images/xdxx/6_22.gif) 0px 0px no-repeat;
+}
+.user_three {
+	width: 667px;
+	height: 254px;
+	position: relative;
+}
+#ucc3 {
+	width: 502px;
+	height: 170px;
+	border-bottom: 2px dashed #cccccc;
+	overflow: hidden;
+}
+.uc3 {
+	width: 502px;
+	height: 170px;
+}
+.userC3 {
+	display: block;
+	height: 234px;
+	width: 533px;
+	left: 124px;
+	top: 11px;
+}
+/*右边内容区*/
+/*右上*/
+#twoBtn {
+	width: 252px;
+	height: 51px;
+	margin-top: 40px
+}
+#presonal {
+	background: url(../../images/xdxx/6_06.gif) 0px 0px no-repeat;
+	width: 96px;
+	height: 46px;
+	display: block;
+}
+#presonal:hover {
+	background: url(../../images/xdxx/6_%201.gif) 0px 0px no-repeat;
+}
+#post {
+	background: url(../../images/xdxx/6_08.gif) 0px 0px no-repeat;
+	width: 96px;
+	height: 46px;
+	display: block;
+}
+#post:hover {
+	background: url(../../images/xdxx/6_2.gif) 0px 0px no-repeat;
+}
+.twoB {
+	float: left;
+	margin-left: 13px;
+}
+.sx {
+	font-size: 45px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+	color: #d4d7da;
+}
+/*右中*/
+.navCr {
+	height: 35px;
+	width: 219px;
+	border: 1px solid #999;
+	margin-left: 15px;
+	position: relative
+}
+.navc1 {
+	background: #FFF;
+}
+.navc11 {
+	margin-left: 10px;
+	margin-top: 10px;
+	background: url(../../images/xdxx/2_17.gif);
+	width: 22px;
+	height: 17px;
+	float: left;
+}
+.navc12 {
+	float: right;
+	width: 160px;
+	margin-top: 1px;
+	margin-right: 2px;
+	border: none;
+}
+.navc2 {
+	display: block;
+	height: 35px;
+	width: 219px;
+	background: #d4d7da;
+	overflow: hidden;
+}
+.navc2:hover {
+	background: #FFF;
+	text-decoration: none;
+}
+.navc2t {
+	margin-left: 10px;
+	margin-top: 6px;
+}
+.navc2p {
+	width: 53px;
+	height: 20px;
+	position: absolute;
+	left: 45px;
+	top: 7px;
+	font-size: 15px;
+	color: #636363;
+}
+.navc3 {
+	background: #FFF;
+	font-size: 14px;
+	font-family: "宋体";
+}
+.navc33 {
+	margin-top: 10px;
+}
+.navc4 {
+	font-size: 13px;
+	font-family: "宋体";
+	font-weight: 500;
+	color: #404142;
+}
+.navc4:hover {
+	text-decoration: none;
+	color: #000;
+}
+.navc3t {
+	width: auto;
+	height: auto;
+	margin-left: 10px;
+	margin-top: 8px;
+}

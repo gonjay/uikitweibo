@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#main {
+	height: 1296px;
+	background: url(image/bg_01.gif) center 0px no-repeat #DADEE1;
+}
+#mainone {
+	
+}
+/*----校园热点------*/
+#rd {
+	width: 960px;
+	height: 20px;
+	margin: 0 auto;
+	padding: 20px 0px;
+}
+.remai {
+	width: 100px;
+	height: 20px;
+	font-size: 20px;
+	font-style: italic;
+	color:#CC0033;
+	float: left;
+}
+.scaleList {
+	margin-left: 0px;
+}
+.scale {
+	width: 200px;
+	height: 20px;
+	float: left;
+}
+.scaleCn a {
+	float: left;
+	margin-left: 8px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #333;
+}
+.scale a:hover {
+	text-decoration: underline;
+	color: #660099;
+}
+.mainCon{ width:960px; height:1175px; margin:auto;}
+.left {
+	width: 14px;
+	height: 426px;
+	float:left;
+	
+	background: #CCCCCC;
+	opacity: 0.4;
+}
+.top {
+	height: 14px;
+	width: 960px;
+	
+	background: #CCCCCC;
+	opacity: 0.4;
+	
+}
+.right {
+	width: 14px;
+	height: 426px;
+	background: #CCCCCC;
+	opacity: 0.5;
+	float:right;
+	
+}
+/*----- 成长轴--------*/
+#grow {
+	width: 932px;
+	height: 148px;
+	background-image: url(image/danghang.gif);
+	margin: auto;
+}
+#hugong {
+	display: block;
+	width: 130px;
+	height: 40px;
+	margin-left: 17px;
+	padding-top: 21px;
+}
+#zq {
+	width: 700px;
+	margin-left: 110px;
+}
+/*------专区-------*/
+#feature {
+	margin: auto;
+	width: 932px;
+	height: 1010px;
+	background-color: #FFF;
+}
+.ft_1 {
+	width: 893px;
+	height: 180px;
+	 margin:0px;
+	padding-top: 20px;
+	padding-left: 22px;
+	float:left;
+}
+.sub_2 {
+	height: 28px;
+}
+.sub {
+	float: left;
+	height: 28px;
+}
+.con {
+	float: left;
+	width: 100px;
+}
+.subList {
+	width: 768px;
+	float: left;
+	padding-top: 2px;
+	list-style: none;
+	border-bottom: #FF0000 1px solid;
+}
+.subNavi {
+	width: 40px;
+	float: left;
+	text-align: center;
+	margin: 0 auto;
+}
+.naviCn {
+	width: 20px;
+	height: 21px;
+	float: left;
+	text-align: center;
+	color: #FF0000;
+}
+.subFT {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+}
+.more a {
+	text-decoration: none;
+	color:#CD5858;
+	float: right;
+	font-size: 16px;
+}
+.more a:hover {
+	text-decoration: underline;
+}
+.leftNew {
+	width: 380px;
+	padding-top: 12px;
+	float: left;
+}
+.leftGra {
+	float: left;
+	width: 174px;
+	height: 128px;
+}
+.news {
+}
+.newsContain {
+	font-weight: bold;
+	line-height: 18px;
+	color: #666;
+}
+.rightNew {
+	width: 380px;
+	padding-top: 12px;
+	float: right;
+}
+.rightGra {
+	width: 174px;
+	height: 128px;
+	float: left;
+}
+.ft_2 {
+	width: 893px;
+	height: 180px;
+	padding-left:25px;
+	padding-top:15px;
+	float:left;
+}
+.ft_3 {
+}
+.ft_4 {
+}
+.ft_5 {
+}

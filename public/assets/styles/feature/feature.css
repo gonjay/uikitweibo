@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#main {
+	height: 1255px;
+	background: url(image/bg_01.gif) center 0px no-repeat #DADEE1;
+}
+#mainone {
+}
+/*----校园热点------*/
+#rd {
+	width: 960px;
+	height: 20px;
+	margin: 0 auto;
+	padding: 20px 0px;
+}
+.remai {
+	width: 100px;
+	height: 20px;
+	font-size: 20px;
+	font-style: italic;
+	color: #CC0033;
+	float: left;
+}
+.scaleList {
+	margin-left: 0px;
+}
+.scale {
+	width: 200px;
+	height: 20px;
+	float: left;
+}
+.scaleCn a {
+	float: left;
+	margin-left: 8px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #333;
+}
+.scale a:hover {
+	text-decoration: underline;
+	color: #660099;
+}
+.mainCon {
+	width: 960px;
+	height: 1175px;
+	margin: auto;
+}
+.left {
+	width: 14px;
+	height: 426px;
+	float: left;
+	background: #CCCCCC;
+	opacity: 0.4;
+}
+.top {
+	height: 14px;
+	width: 960px;
+	background: #CCCCCC;
+	opacity: 0.4;
+}
+.right {
+	width: 14px;
+	height: 426px;
+	background: #CCCCCC;
+	opacity: 0.5;
+	float: right;
+}
+.freshFeauter {
+	background-color: #FFFFFF;
+	width: 932px;
+	height: 1172px;
+	float: left;
+}
+.shadow{
+	}
+.leftNavi {
+	width: 238px;
+	height: 1172px; background-color: #EFF5F2; -moz-box-shadow:5px 5px 20px #E5E5E5;
+box-shadow:5px 5px 20px #E5E5E5;
+	float: left;
+	
+}
+.leftCon {
+	width: 211px;
+	height: 1146px;
+	border: 2px #C1CFC8 dashed;
+	margin: 10px 14px 12px 12px;
+}
+.xinsheng{ width:210px; height:40px; background:url(image/freshmanF.gif); margin:13px; opacity:0.8}
+._top{ width:61px; margin:auto;height:36px;}
+.lvyou{width:238px; height:156px; background:url(image/10_04.gif) center no-repeat #E1E8E5; opacity:0.5; margin-left:-14px;}
+.lvyou:hover{background:url(image/lv_04.gif) center no-repeat #E1E8E5;}
+.con{width:211px; height:156px;}
+.yule{ background:url(image/10_07.gif) center no-repeat;}
+.yule:hover{ background:url(image/yl_06.gif) center no-repeat;}
+.fangkeng{ background:url(image/10_08.gif) center no-repeat;}
+.fangkeng:hover{ background:url(image/fk_08.gif) center no-repeat;}
+.chuxing{ background:url(image/10_09.gif) center no-repeat;}
+.chuxing:hover{ background:url(image/cx_09.gif) center no-repeat;}
+.yinshi{ background:url(image/10_11.gif) center no-repeat;}
+.yinshi:hover{ background:url(image/ys_11.gif) center no-repeat;}
+.gouwu{ background:url(image/10_12.gif) center no-repeat;}
+.gouwu:hover{ background:url(image/gw_12.gif) center no-repeat;}
+.freshman {
+	width: 694px;
+	height: 1172px;
+	float: right;
+}
+.rightCon {
+	width: 680px;
+	height: 1146px;
+	margin: 10px 16px 12px 0px;
+	border-bottom: 2px #C1CFC8 dashed;
+	border-right: 2px #C1CFC8 dashed;
+	border-top: 2px #C1CFC8 dashed;
+}
+.position{ height:40px; }
+.positionCon{ padding-top:8px; font-size:15px;}
+.positionCon a{ color:#000;}
+.positionCon span{color:#000;}
+.position_1{ width:288px; height:39px; margin-top:13px; margin-left:-1px; background:#9DD6C5;}
+.bg_1{ width:40px; height:156px;background-color:#E1E8E5; opacity:0.5; margin-top:91px;}
+.bg_2{ width:25px; height:156px;background-color:#E1E8E5; opacity:0.5; margin-top:91px;}
+.tourist{width:655px; height:232px; background:url(image/10.gif) no-repeat; margin-left:40px;}
+
+.bg{ width:630px; height:15px;background-color:#E1E8E5; opacity:0.5; margin-left:40px;
+}
+.wuhanOne{ width:640px;height:133px; margin-top:28px; float:right;}
+.oneCon{ width:195px; height:130px;background:url(image/wuhan_03.gif) no-repeat; float:left;}
+.iwuhan{ width:440px; float:right;}
+.iwuhanOne {font-size:16px;}
+.iwuhanOne{ color:#0066CC;}
+.iwuhanOne span{ color:#0066CC;}
+.iwuhan p{ padding-top:12px;}
+.comment a{ color:#AAAAAA;}
+
+.com{width:12px; height:12px;background:url(image/10-1.gif)  center no-repeat; padding-top:8px; float:left;}
+.com_1{ width:12px; height:12px; float:left;}
+.com_2{width:12px; height:12px; margin-left:15px;background:url(image/10-2.gif) center no-repeat; padding-top:8px; float:left;}
+.author{ width:220px; float:right; font-size:13px;}
+.wuhanTwo{ width:640px;height:133px; margin-top:20px; float:right;}
+.author_2{ width:180px;float:right; font-size:13px;}
+.twoCon{ width:195px; height:130px;background:url(image/wuhan_06.gif) no-repeat; float:left;}
+
+
