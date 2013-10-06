@@ -9,6 +9,8 @@ gem 'sqlite3'
 gem 'simple_form'
 gem 'mysql2'
 gem 'activerecord-mysql-adapter'
+gem 'thin'
+gem 'unicorn'
 
 # Gems used only for assets and not required
 # in production environments by default.
