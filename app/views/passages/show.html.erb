@@ -1,58 +1,58 @@
 <link href="<%= root_path %>assets/styles/newsContents/newsContents.css" rel="stylesheet" type="text/css" />
 <div class="wrap">
-  	<div class="container">
-
-  		<!-- 校园特卖  start -->
-  		<div id="school_sale">
-  			<div class="saleTitle"><em>校园特卖:</em></div>
-  			<div class="saleList">
-  				<ul class="saleListUl">
-  					<li class="item">
-  						<a href="#" class="keyHref">娃哈哈</a>
-  					</li>
-  					<li class="item">
-  						<a href="#" class="keyHref">每天10点</a>
-  					</li>
-  					<li class="item">
-  						<a href="#" class="keyHref">确保低价</a>
-  					</li>
-  				</ul>
-  				<div class="clear"></div>
-  			</div>
-  			<div class="clear"></div>
-  		</div>
-  		<!-- 校园特卖   end -->
-
-  		<!--透明块  start-------->
-  		<div id="topBorder" class="transparent"></div>
-  		<div id="ltBorder" class="transparent"></div>
-  		<div id="rtBorder" class="transparent"></div>
-  		<!--透明块  end-->
-
-
-  		<!---mainContainer白色背景盒子 start------>
-  		<div id="mainContainer">
-  			<!---mainContain内容大盒子 start-------->
-  			<div id="mainContain">
-
-  				<!-----左侧导航  start-------------------->
-  				<div id="leftside">
-  					<div id="sideNav">
-  						<img src="<%= root_path %>assets/styles/newsContents/images/coin1.png" />&nbsp;<span1>官方新闻</span1><br />
-  						<img src="<%= root_path %>assets/styles/newsContents/images/coin3_03.png" />&nbsp;<a href="#">湖工要闻</a><br />
-  						<img src="<%= root_path %>assets/styles/newsContents/images/coin2.png" />&nbsp;<a href="#">院系新闻</a><br />
-  						<img src="<%= root_path %>assets/styles/newsContents/images/coin2.png" />&nbsp;<a href="#">官方活动</a><br />
-  						<img src="<%= root_path %>assets/styles/newsContents/images/coin2.png" />&nbsp;<a href="#">招聘会</a>&nbsp;&nbsp;&nbsp;<br />
-  						<img src="<%= root_path %>assets/styles/newsContents/images/coin2.png" />&nbsp;<a href="#">实习公告</a><br />
-  					</div>
-  					<div id="bg"></div>
-  				</div>
-  				<!-----左侧导航 end-------------------->
-
-
-
+  <div class="container">
+    
+    <!-- 校园特卖  start -->
+    <div id="school_sale">
+      <div class="saleTitle"><em>校园特卖:</em></div>
+      <div class="saleList">
+        <ul class="saleListUl">
+          <li class="item">
+            <a href="#" class="keyHref">娃哈哈</a>
+          </li>
+          <li class="item">
+            <a href="#" class="keyHref">每天10点</a>
+          </li>
+          <li class="item">
+            <a href="#" class="keyHref">确保低价</a>
+          </li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- 校园特卖   end -->
+    
+    <!--透明块  start-------->
+    <div id="topBorder" class="transparent"></div>
+    <div id="ltBorder" class="transparent"></div>
+    <div id="rtBorder" class="transparent"></div>
+    <!--透明块  end-->
+    
+    
+    <!---mainContainer白色背景盒子 start------>
+    <div id="mainContainer">
+      <!---mainContain内容大盒子 start-------->
+      <div id="mainContain" class="row">
+       
+       <!-----左侧导航  start-------------------->
+       
+       <div id="sideNav">
+         <img src="<%= root_path %>assets/styles/newsContents/images/coin1.png" />&nbsp;<span1>官方新闻</span1><br />
+         <img src="<%= root_path %>assets/styles/newsContents/images/coin3_03.png" />&nbsp;<a href="#">湖工要闻</a><br />
+         <img src="<%= root_path %>assets/styles/newsContents/images/coin2.png" />&nbsp;<a href="#">院系新闻</a><br />
+         <img src="<%= root_path %>assets/styles/newsContents/images/coin2.png" />&nbsp;<a href="#">官方活动</a><br />
+         <img src="<%= root_path %>assets/styles/newsContents/images/coin2.png" />&nbsp;<a href="#">招聘会</a>&nbsp;&nbsp;&nbsp;<br />
+         <img src="<%= root_path %>assets/styles/newsContents/images/coin2.png" />&nbsp;<a href="#">实习公告</a><br />
+       </div>
+       <div id="leftside">
+       </div>
+       <!-----左侧导航 end-------------------->
+       
+       
+       
            <!-------右侧   start----------------------->
-           <div id="rightside">
+           <div id="rightside" class="row">
            
            
   <!-----------------------右侧上部   start--------------->           
@@ -63,7 +63,7 @@
     <!-----------------------右侧上部  end--------------->
     
             <!------右侧正文    start------------------->
-             <div id="middlebk">
+             <div id="middlebk" class="row">
              <p><span5><%= @passage.title %></span5><br />
              <span6><%= @passage.newsrecord %></span6><br /></p>
              <p>
@@ -75,27 +75,30 @@
                 <p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;<%=c %></p>
               <% end %>
              
-             <!-------------分享   start-------------->
-             <span3>分享到：
-             	<a href="#"><img src="<%= root_path %>assets/styles/newsContents/images/8_03.png" /></a>
-             	<a href="#"><img src="<%= root_path %>assets/styles/newsContents/images/8_04.png" /></a>
-             	<a href="#"><img src="<%= root_path %>assets/styles/newsContents/images/8_05.png" /></a>
-             	<a href="#"><img src="<%= root_path %>assets/styles/newsContents/images/8_06.png" /></a>
-             	<a href="#"><img src="<%= root_path %>assets/styles/newsContents/images/8_07.png" /></a>
-             	<a href="#"><img src="<%= root_path %>assets/styles/newsContents/images/8_08.png" /></a>
-             	<img src="<%= root_path %>assets/styles/newsContents/images/8_09.png" />
-             </span3>
-             <!-------------分享   end-------------->
-             
-         </div>
+              <!-------------分享   start-------------->
+              <span3>
+               <!-- Baidu Button BEGIN -->
+               <div id="bdshare" class="bdshare_b" style="line-height: 12px;">
+                <img src="http://bdimg.share.baidu.com/static/images/type-button-1.jpg?cdnversion=20120831" />
+                <a class="shareCount"></a>
+              </div>
+              <script type="text/javascript" id="bdshare_js" data="type=button&amp;uid=6833084" ></script>
+              <script type="text/javascript" id="bdshell_js"></script>
+              <script type="text/javascript">
+              document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+              </script>
+              <!-- Baidu Button END -->
+            </span3>
+            <!-------------分享   end-------------->
+            
+          </div>
              <!------右侧正文    end------------------->
            </div>
            <!-------右侧   end----------------------->
            </div>
            <!---mainContain内容大盒子 end-------->
+         </div>
+         <!---mainContainer白色背景盒子 end------>
+         
        </div>
-       <!---mainContainer白色背景盒子 end------>
-
-   </div>
-</div>
-
+     </div> 
