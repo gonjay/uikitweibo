@@ -23,5 +23,5 @@ production:
   encoding: utf8
   database: hgd_production
   user: root
-  password: U7cpcJFfEB
+  password:
   host: localhost
