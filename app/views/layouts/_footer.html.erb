@@ -166,6 +166,25 @@
 <script type="text/javascript" src="<%= root_path %>assets/lib/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
 <script type="text/javascript" src="<%= root_path %>assets/script/xbxz/tab.js"></script>
 <script type="text/javascript" src="<%= root_path %>assets/script/xbxz/script.js"></script>
+<script type="text/javascript" src="<%= root_path %>assets/lib/jquery.anythingslider.min.js"></script>
+<script>
+    // Set up Sliders
+    // **************
+    $(function(){
+
+      $('#slider1').anythingSlider({
+        theme           : 'metallic',
+        easing          : 'easeInOutBack',
+        navigationFormatter : function(index, panel){
+          return ['Slab', 'Parking Lot', 'Drive', 'Glorius Dawn', 'Bjork?', 'Traffic Circle'][index - 1];
+        },
+        onSlideComplete : function(slider){
+          // alert('Welcome to Slide #' + slider.currentPage);
+        }
+      });
+
+    });
+  </script>
 
 <script type="text/javascript">
   $(document).ready(function() {
