@@ -1,0 +1,32 @@
+<%= form_for(@apk) do |f| %>
+<% if @apk.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@apk.errors.count, "error") %> prohibited this apk from being saved:</h2>
+
+  <ul>
+    <% @apk.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class="field">
+  版本号（例如：1.0.1）<br />
+  <%= f.text_field :version %>
+</div>
+<div class="field">
+  下载地址<br />
+  <%= f.text_field :downloadUrl, class: "downloadUrl" %>
+</div>
+<div class="field">
+  网络类型<br>
+  <select name="apk[netType]">
+    <option value="W">外网</option>
+    <option value="N">内网</option>
+  </select>
+</div>
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>

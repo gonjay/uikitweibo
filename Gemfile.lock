@@ -62,6 +62,11 @@ GEM
     mysql (2.9.1)
     mysql2 (0.3.13)
     polyglot (0.3.3)
+    qiniu-rs (3.4.6)
+      json (~> 1.7)
+      mime-types (~> 1.19)
+      rest-client (~> 1.6)
+      ruby-hmac (~> 0.4)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -88,6 +93,9 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    ruby-hmac (0.4.0)
     sass (3.2.11)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -128,6 +136,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   mysql2
+  qiniu-rs
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   simple_form

@@ -11,6 +11,7 @@ gem 'mysql2'
 gem 'activerecord-mysql-adapter'
 gem 'thin'
 gem 'unicorn'
+gem 'qiniu-rs'
 
 # Gems used only for assets and not required
 # in production environments by default.

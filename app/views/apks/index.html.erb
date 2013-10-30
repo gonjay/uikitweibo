@@ -1,0 +1,27 @@
+<h1>Listing apks</h1>
+
+<table>
+  <tr>
+    <th>Version</th>
+    <th>Downloadurl</th>
+    <th>Nettype</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @apks.each do |apk| %>
+  <tr>
+    <td><%= apk.version %></td>
+    <td><%= apk.downloadUrl %></td>
+    <td><%= apk.netType %></td>
+    <td><%= link_to 'Show', apk %></td>
+    <td><%= link_to 'Edit', edit_apk_path(apk) %></td>
+    <td><%= link_to 'Destroy', apk, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Apk', new_apk_path %>

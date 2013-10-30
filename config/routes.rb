@@ -1,4 +1,11 @@
 Blogme::Application.routes.draw do
+  resources :apks do
+    collection do
+      get 'last'
+    end
+  end
+
+
   resources :passages do
     collection do
       get 'lastPostUrl'

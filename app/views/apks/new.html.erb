@@ -1,0 +1,28 @@
+<h1>New apk</h1>
+
+<form id="myForm" enctype="multipart/form-data">
+	<input name="token" type="hidden" value="<%= @upload_token %>">
+	<input name="file" type="file" />
+	<input class="submit" type="submit">
+</form>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', apks_path %>
+
+<script src="http://malsup.github.com/jquery.form.js"></script> 
+
+<script> 
+	// wait for the DOM to be loaded 
+	$(document).ready(function() { 
+
+		$('#myForm').ajaxForm({
+			url: 'http://up.qiniu.com/', 
+			type: 'post',
+			success: function(data)
+           	{
+               $('.downloadUrl').attr('value', data.hash)
+           	}
+		});
+	}); 
+</script> 
