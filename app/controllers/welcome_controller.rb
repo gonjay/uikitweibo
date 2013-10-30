@@ -1,4 +1,6 @@
 class WelcomeController < ApplicationController
+  http_basic_authenticate_with name: "mothinlab", password: "gonjay"
+
   def index
     @nav = 1
     @officialnews = Passage.where(psgType: 1).order("created_at DESC").limit(5)
