@@ -9,6 +9,7 @@ class WelcomeController < ApplicationController
 
   def officialnews
     @nav = 2
+    @officialnews = Passage.where(psgType: 1).order("created_at DESC").limit(5)
   end
 
   def schoolbully

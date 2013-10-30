@@ -1,5 +1,9 @@
 Blogme::Application.routes.draw do
-  resources :passages
+  resources :passages do
+    collection do
+      get 'lastPostUrl'
+    end
+  end
 
   get 'index' => 'welcome#index'
   get 'officialnews' => 'welcome#officialnews'

@@ -20,15 +20,16 @@ ActiveRecord::Schema.define(:version => 20130923170032) do
     t.string   "postUrl"
     t.string   "newsrecord"
     t.integer  "psgType"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "tag"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "tags", :force => true do |t|
     t.string   "name"
     t.string   "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

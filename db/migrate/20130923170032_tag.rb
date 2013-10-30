@@ -14,6 +14,7 @@ class Tag < ActiveRecord::Migration
       t.string  :postUrl
       t.string  :newsrecord
       t.integer :psgType
+      t.string  :tag
 
       t.timestamps
     end
