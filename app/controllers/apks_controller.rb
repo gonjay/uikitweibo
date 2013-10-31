@@ -3,7 +3,7 @@ class ApksController < ApplicationController
   # GET /apks
   # GET /apks.json
   def index
-    @apks = Apk.all
+    @apks = Apk.order("created_at DESC").all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -86,6 +86,7 @@ class ApksController < ApplicationController
   def last
     @apk = Apk.last
     respond_to do |format|
+      format.html
       format.json { render json: @apk }
     end
   end
