@@ -1,4 +1,7 @@
 Blogme::Application.routes.draw do
+  resources :albums
+
+
   resources :apks do
     collection do
       get 'last'

@@ -2,13 +2,14 @@
 
 <form id="myForm" enctype="multipart/form-data">
 	<input name="token" type="hidden" value="<%= @upload_token %>">
+	<input name="key" type="hidden" value="<%= Time.now.month.to_s + "月" + Time.now.day.to_s + "日-缘来有约-#{SecureRandom.hex 2}.apk" %>">
 	<input name="file" type="file" />
 	<input class="submit" type="submit">
 </form>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', apks_path %>
+<div><%= link_to '返回', apks_path, class:"button white" %></div>
 
 <script src="<%= root_path %>assets/jquery-1.9.1.min.js"></script> 
 <script src="<%= root_path %>assets/jquery.form.js"></script> 
@@ -20,9 +21,9 @@
 			url: 'http://up.qiniu.com/', 
 			type: 'post',
 			success: function(data)
-           	{
-               $('.downloadUrl').attr('value', data.hash)
-           	}
+			{
+				$('.downloadUrl').attr('value', data.key)
+			}
 		});
 	}); 
-</script> 
+	</script> 
