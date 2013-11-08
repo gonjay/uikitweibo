@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131030082533) do
+ActiveRecord::Schema.define(:version => 20131107023031) do
+
+  create_table "albums", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "imageUrl"
+    t.string   "useType"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "useFlag"
+  end
 
   create_table "apks", :force => true do |t|
     t.string   "version"

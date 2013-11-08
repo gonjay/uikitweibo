@@ -1,0 +1,72 @@
+	.custom_a {
+		color: #fff;
+	}
+
+	body.style {
+		background-image: url(../images/bg.png);
+		background-attachment: fixed;
+		background-repeat: repeat;
+		background-repeat: no-repeat;
+		background-color: #C0DEED;
+	}
+
+	.wrapper.white {
+		background: url(../images/wash-white-30.png);
+		padding: 15px;
+		padding-top: 53px;
+	}
+
+	.uk-fixed-navigation {
+		position: fixed;
+		right: 0;
+		left: 0;
+		top: 0;
+		z-index: 1030;
+	}
+
+	.account-summary {
+		min-height: 32px;
+		position: relative;
+		display: block;
+		text-align: left;
+	}
+
+	.account.content {
+		float: left;
+		margin-left: 41px;
+	}
+
+	.fullname {
+		font-weight: bold;
+		color: #333;
+	}
+
+	.size32 {
+		width: 32px;
+		height: 32px;
+		border-radius: 4px;
+	}
+
+	.account-summary .avatar {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.account-summary img {
+		float: left;
+	}
+	.account-divider {
+		margin-top: 13px;
+	}
+	.input-grid {
+		margin-top: 16px;
+	}
+	.input-send {
+		width: 300px;
+	}
+	#send {
+		min-height: 33px;
+	}
+	.send-button-hide {
+		display: none;
+	}

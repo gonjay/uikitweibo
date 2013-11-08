@@ -1,27 +1,30 @@
-<h1>Listing albums</h1>
-
-<table>
+<table class="uk-table">
   <tr>
-    <th>User</th>
-    <th>Imageurl</th>
-    <th>Usetype</th>
-    <th></th>
-    <th></th>
+    <th>照片</th>
+    <th>用途</th>
     <th></th>
   </tr>
-
-<% @albums.each do |album| %>
+  <% @albums.each do |album| %>
   <tr>
-    <td><%= album.user_id %></td>
-    <td><%= album.imageUrl %></td>
-    <td><%= album.useType %></td>
-    <td><%= link_to 'Show', album %></td>
-    <td><%= link_to 'Edit', edit_album_path(album) %></td>
-    <td><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><img class="uk-thumbnail uk-thumbnail-mini" src="<%= album.imageUrl %>" alt=""></td>
+    <td>
+      <a href="<%= edit_album_path album %>?userID=<%= params[:userID] %>" data-confirm="设置为形象照片？">
+        <button id="setButton" class="uk-button uk-button-success uk-button-small" type="button" <%= "disabled" if album.useFlag == 2%>>
+          <%= album.useFlagType %>
+        </button>
+      </a>
+    </td>
+    <td>
+      <%= link_to '删除', album, method: :delete, data: { confirm: '你确定要删除吗？' }, class:"uk-button uk-button-danger uk-button-small" %>
+    </td>
+
   </tr>
-<% end %>
+  <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New Album', new_album_path %>
+<script type="text/javascript">
+$('#setButton').click(function() {
+    // alert("sdf");
+  });
+</script>

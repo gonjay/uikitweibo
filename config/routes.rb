@@ -1,5 +1,9 @@
 Blogme::Application.routes.draw do
-  resources :albums
+  resources :albums do
+    collection do
+      get 'getToken'
+    end
+  end
 
 
   resources :apks do
