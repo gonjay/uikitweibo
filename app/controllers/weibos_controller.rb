@@ -13,7 +13,8 @@ class WeibosController < ApplicationController
   # GET /weibos/1
   # GET /weibos/1.json
   def show
-    @weibo = Weibo.find(params[:id])
+    @weibo = Weibo.includes(:comments).find(params[:id])
+    @comment = @weibo.comments.new
 
     respond_to do |format|
       format.html # show.html.erb

@@ -32,7 +32,7 @@ Blogme::Application.routes.draw do
   get 'freshman' => 'welcome#freshman'
   get 'hersay' => 'welcome#hearsay'
 
-  root :to => 'welcome#index'
+  root :to => 'weibos#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
