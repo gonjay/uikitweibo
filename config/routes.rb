@@ -1,4 +1,10 @@
 Blogme::Application.routes.draw do
+  resources :comments
+
+
+  resources :weibos
+  resources :users
+
   resources :albums do
     collection do
       get 'getToken'

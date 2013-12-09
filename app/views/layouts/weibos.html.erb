@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datescripts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="<%= root_path %>css/uikit.almost-flat.min.css" />
+	<script src="<%= root_path %>js/jquery.min.js"></script>
+	<script src="<%= root_path %>js/uikit.min.js"></script>
+	<link rel="stylesheet" href="<%= root_path %>css/index.css" />
+	<link rel="stylesheet" type="text/css" href="<%= root_path %>css/font-awesome.css">
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+</head>
+<body class="style">
+	<%= render 'layouts/header' %>
+	<%= yield %>
+
+</body>
+</html>

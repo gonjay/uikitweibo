@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  weibo_id: 1
+  user_id: 1
+  content: MyString
+
+two:
+  weibo_id: 1
+  user_id: 1
+  content: MyString

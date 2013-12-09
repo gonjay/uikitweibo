@@ -1,108 +1,60 @@
-<header id="header">
-    <div class="headerCont">
-      <!-- 网站信息及快捷接口  start -->
-      <div class="row topBar">
-        <div class="container">
-		  <span class="pull-right">
-            <span class="">亲，欢迎来到湖工大！ 请</span>
-            <a href="#" class="white" rel="nofollow">登录</a>
-            <span class="">&nbsp;&nbsp;</span>
-            <a href="#" class="white" rel="nofollow">注册</a>
-          </span>
-        </div>
-      </div>
-      <!-- 网站信息及快捷接口  end -->
-    
-      <!-- logo and search   start -->
-      <div class="row siteHeader">
-        <div class="container">
-          <!-- logo   start -->
-          <div id="logo" class="logo">
-            <div class="logoCont">
-              <a href="#" class="logoHref fL">hgd.org.cn</a>
-              <span class="logoDesc fL">在湖工,在一起</span>
-              <div class="clear"></div>
-            </div>
-          </div>
-          <!-- logo   end -->
-          <!-- search form   start -->
-          <div class="headSearch">
-            <div class="form-inline searchForm">
-              <input type="text" class="input searchKey fL">
-              <a href="javascript:void(0);" class="btn srarchBtn fL">搜索</a>
-              <div class="clear"></div>
-            </div>
-          </div>
-          <!-- search form   end -->
-        </div>
-      </div>
-      <!-- logo and search   end -->
-    
-      <!-- navi   start -->
-      <div class="row navi">
-        <div class="container">
-          <div class="naviCont">
-            <ul class="navUL">
-              <li class="item fL <%= 'active' if @nav == 1 %>">
-                <div class="itemCont">
-                  <a href="<%= index_path %>" class="navHref">首页</a>
-                </div>
-              </li>
-              <li class="item fL divider">
-                <div class="itemCont">
-                  <span class="dividerTxt">|</span>
-                </div>
-              </li>
-              <li class="item fL <%= 'active' if @nav == 2 %>">
-                <div class="itemCont">
-                  <a href="<%= officialnews_path %>" class="navHref">官方新闻</a>
-                </div>
-              </li>
-              <li class="item fL divider">
-                <div class="itemCont">
-                  <span class="dividerTxt">|</span>
-                </div>
-              </li>
-              <li class="item fL <%= 'active' if @nav == 3 %>">
-                <div class="itemCont">
-                  <a href="<%= schoolbully_path %>" class="navHref">学霸学渣</a>
-                </div>
-              </li>
-              <li class="item fL divider">
-                <div class="itemCont">
-                  <span class="dividerTxt">|</span>
-                </div>
-              </li>
-              <li class="item fL <%= 'active' if @nav == 4 %>">
-                <div class="itemCont">
-                  <a href="<%= growthbook_path %>" class="navHref">成长手册</a>
-                </div>
-              </li>
-              <li class="item fL divider">
-                <div class="itemCont">
-                  <span class="dividerTxt">|</span>
-                </div>
-              </li>
-              <li class="item fL <%= 'active' if @nav == 5 %>">
-                <div class="itemCont">
-                  <a href="<%= hersay_path %>" class="navHref">小道消息</a>
-                </div>
-              </li>
-              <li class="item fL divider">
-                <div class="itemCont">
-                  <span class="dividerTxt">|</span>
-                </div>
-              </li>
-              <li class="item fL">
-                <div class="itemCont">
-                  <a href="#" class="navHref">社区乐园</a>
-                </div>
-              </li>
+  <nav class="uk-navbar uk-fixed-navigation">
+    <div class="uk-container-center uk-container">
+      <ul class="uk-navbar-nav uk-hidden-small">
+        <li class="uk-active"><a href=""><i class="uk-icon-home uk-icon-small"></i> 主页</a></li>
+        <li><a href=""><i class="uk-icon-external-link uk-icon-small"></i> 联系</a></li>
+        <li><a href=""><i class="uk-icon-eye-open uk-icon-small"></i> 发现</a></li>
+        <li><a href=""><i class="uk-icon-user uk-icon-small"></i> 我</a></li>
+        <li class="uk-parent" data-uk-dropdown="">
+          <a href=""><i class="uk-icon-cog uk-icon-small"></i> 设置</a>
+
+          <div class="uk-dropdown uk-dropdown-navbar">
+            <ul class="uk-nav uk-nav-navbar">
+              <li><a href="#"><i class="uk-icon-envelope"></i> 私信</a></li>
+              <li><a href="#"><i class="uk-icon-list"></i> 列表</a></li>
+              <li class="uk-nav-header">客户端</li>
+              <li><a href="#"><i class="uk-icon-android"></i> 安卓</a></li>
+              <li><a href="#"><i class="uk-icon-apple"></i> 苹果iOS</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#"><i class="uk-icon-off"></i> 退出</a></li>
             </ul>
-            <div class="clear"></div>
+          </div>
+
+        </li>
+      </ul>
+      <div class="uk-navbar-flip">
+        <div class="uk-navbar-content">
+          <form class="uk-search" data-uk-search="{flipDropdown:true, source:'../vendor/searchresults.json'}">
+            <input class="uk-search-field" type="search" placeholder="搜索 . . ." autocomplete="off">
+            <button class="uk-search-close" type="reset"></button>
+            <div class="uk-dropdown uk-dropdown-search uk-dropdown-flip"><ul class="uk-nav uk-nav-search"></ul></div></form>
           </div>
         </div>
+
+        <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+
+        <div id="tm-offcanvas" class="uk-offcanvas">
+
+          <div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{multiple:true}">
+              <li class="uk-nav-header">Datascripts</li>
+              <li class="uk-active"><a href=""><i class="uk-icon-home uk-icon-medium"></i> 主页</a></li>
+              <li><a href=""><i class="uk-icon-user"></i> &nbsp; &nbsp;我的主页</a></li>
+              <li><a href=""><i class="uk-icon-external-link"></i> &nbsp; 联系</a></li>
+              <li><a href=""><i class="uk-icon-eye-open"></i> &nbsp; 发现</a></li>
+              
+              <li><a href="#"><i class="uk-icon-envelope"></i> &nbsp; 私信</a></li>
+              <li><a href="#"><i class="uk-icon-list"></i> &nbsp; 列表</a></li>
+              <li class="uk-nav-header">客户端</li>
+              <li><a href="#"><i class="uk-icon-android"></i> &nbsp; 安卓</a></li>
+              <li><a href="#"><i class="uk-icon-apple"></i> &nbsp; 苹果iOS</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#"><i class="uk-icon-off"></i> &nbsp; 退出</a></li>
+            </ul>
+
+          </div>
+
+        </div>
       </div>
-      <!-- navi   end -->
-    </div>
-  </header>
+    </nav>
