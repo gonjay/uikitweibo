@@ -1,4 +1,5 @@
 class WeibosController < ApplicationController
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   # GET /weibos
   # GET /weibos.json
   def index

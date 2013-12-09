@@ -28,7 +28,7 @@
               </div>
               <div>
                 <a class="uk-icon-button uk-icon-heart favorite uk-icon-spin" data-confirm="确定赞一下吗"></a><%= weibo.favorite.present? ? weibo.favorite : "0" %>
-                <a class="uk-icon-button uk-icon-comment comment" data-confirm="确定要评论吗？"></a> 12
+                <a class="uk-icon-button uk-icon-comment comment" data-confirm="确定要评论吗？"></a> <%= weibo.comments.count %>
               </div >
             </header>
           </li>

@@ -16,7 +16,7 @@
               <li><a href="#"><i class="uk-icon-android"></i> 安卓</a></li>
               <li><a href="#"><i class="uk-icon-apple"></i> 苹果iOS</a></li>
               <li class="uk-nav-divider"></li>
-              <li><a href="#"><i class="uk-icon-off"></i> 退出</a></li>
+              <li><%= link_to " 退出登陆", destroy_user_session_path, :method => :delete, :class=> 'uk-icon-off' %></li>
             </ul>
           </div>
 
@@ -50,7 +50,7 @@
               <li><a href="#"><i class="uk-icon-android"></i> &nbsp; 安卓</a></li>
               <li><a href="#"><i class="uk-icon-apple"></i> &nbsp; 苹果iOS</a></li>
               <li class="uk-nav-divider"></li>
-              <li><a href="#"><i class="uk-icon-off"></i> &nbsp; 退出</a></li>
+              <li><%= link_to " 退出登陆", destroy_user_session_path, :method => :delete, :class=> 'uk-icon-off' %></li>
             </ul>
 
           </div>
