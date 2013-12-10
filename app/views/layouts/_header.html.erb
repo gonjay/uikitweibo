@@ -1,26 +1,35 @@
   <nav class="uk-navbar uk-fixed-navigation">
     <div class="uk-container-center uk-container">
       <ul class="uk-navbar-nav uk-hidden-small">
-        <li class="uk-active"><a href="<%= root_path %>"><i class="uk-icon-home uk-icon-small"></i> 主页</a></li>
-        <li><a href=""><i class="uk-icon-external-link uk-icon-small"></i> 联系</a></li>
-        <li><a href=""><i class="uk-icon-eye-open uk-icon-small"></i> 发现</a></li>
-        <li><a href=""><i class="uk-icon-user uk-icon-small"></i> 我</a></li>
+        <li class="uk-active"><a href="<%= root_path %>"><i class="uk-icon-home uk-icon-large"></i> <strong>主页</strong></a></li>
+        <% if user_signed_in? %>
         <li class="uk-parent" data-uk-dropdown="">
-          <a href=""><i class="uk-icon-cog uk-icon-small"></i> 设置</a>
-
+          <a href=""><i class="uk-icon-user uk-icon-small"></i> 我</a>
           <div class="uk-dropdown uk-dropdown-navbar">
             <ul class="uk-nav uk-nav-navbar">
+              <li><a href=""><i class="uk-icon-external-link "></i> 联系</a></li>
+              <li><a href=""><i class="uk-icon-eye-open"></i> 发现</a></li>
               <li><a href="#"><i class="uk-icon-envelope"></i> 私信</a></li>
               <li><a href="#"><i class="uk-icon-list"></i> 列表</a></li>
-              <li class="uk-nav-header">客户端</li>
-              <li><a href="#"><i class="uk-icon-android"></i> 安卓</a></li>
-              <li><a href="#"><i class="uk-icon-apple"></i> 苹果iOS</a></li>
-              <li class="uk-nav-divider"></li>
+              <li class="uk-nav-header">设置</li>
               <li><%= link_to " 退出登陆", destroy_user_session_path, :method => :delete, :class=> 'uk-icon-off' %></li>
             </ul>
           </div>
-
         </li>
+        <% else %>
+        <li><%= link_to " 登陆", new_user_session_path, :class => 'uk-icon-signin uk-icon-small' %></li>
+        <li><%= link_to " 注册", new_user_registration_path, :class => 'uk-icon-cloud uk-icon-small' %></li>
+        <% end %>
+        <li class="uk-parent" data-uk-dropdown="">
+          <a href=""><i class="uk-icon-mobile-phone uk-icon-small"></i> 客户端</a>
+          <div class="uk-dropdown uk-dropdown-navbar">
+            <ul class="uk-nav uk-nav-navbar">
+              <li><a href="#"><i class="uk-icon-android"></i> 安卓</a></li>
+              <li><a href="#"><i class="uk-icon-apple"></i> 苹果iOS</a></li>
+            </ul>
+          </div>
+        </li>
+
       </ul>
       <div class="uk-navbar-flip">
         <div class="uk-navbar-content">
@@ -40,17 +49,24 @@
             <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{multiple:true}">
               <li class="uk-nav-header">Datascripts</li>
               <li class="uk-active"><a href=""><i class="uk-icon-home uk-icon-medium"></i> 主页</a></li>
-              <li><a href=""><i class="uk-icon-user"></i> &nbsp; &nbsp;我的主页</a></li>
-              <li><a href=""><i class="uk-icon-external-link"></i> &nbsp; 联系</a></li>
-              <li><a href=""><i class="uk-icon-eye-open"></i> &nbsp; 发现</a></li>
-              
-              <li><a href="#"><i class="uk-icon-envelope"></i> &nbsp; 私信</a></li>
-              <li><a href="#"><i class="uk-icon-list"></i> &nbsp; 列表</a></li>
+              <% if user_signed_in? %>
+              <li><a href=""><i class="uk-icon-user"></i> 我</a></li>
+              <li><a href=""><i class="uk-icon-external-link"></i> 联系</a></li>
+              <li><a href=""><i class="uk-icon-eye-open"></i> 发现</a></li>
+
+              <li><a href="#"><i class="uk-icon-envelope"></i> 私信</a></li>
+              <li><a href="#"><i class="uk-icon-list"></i> 列表</a></li>
+              <% else %>
+              <li><%= link_to " 登陆", new_user_session_path, :class => 'uk-icon-signin' %></li>
+              <li><%= link_to " 注册", new_user_registration_path, :class => 'uk-icon-cloud' %></li>
+              <% end %>
               <li class="uk-nav-header">客户端</li>
-              <li><a href="#"><i class="uk-icon-android"></i> &nbsp; 安卓</a></li>
-              <li><a href="#"><i class="uk-icon-apple"></i> &nbsp; 苹果iOS</a></li>
+              <li><a href="#"><i class="uk-icon-android"></i> 安卓</a></li>
+              <li><a href="#"><i class="uk-icon-apple"></i> 苹果iOS</a></li>
               <li class="uk-nav-divider"></li>
+              <% if user_signed_in? %>
               <li><%= link_to " 退出登陆", destroy_user_session_path, :method => :delete, :class=> 'uk-icon-off' %></li>
+              <% end %>
             </ul>
 
           </div>

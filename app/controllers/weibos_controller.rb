@@ -1,5 +1,5 @@
 class WeibosController < ApplicationController
-  before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :favorite]
   # GET /weibos
   # GET /weibos.json
   def index
@@ -85,6 +85,18 @@ class WeibosController < ApplicationController
     respond_to do |format|
       format.html { redirect_to weibos_url }
       format.json { head :no_content }
+    end
+  end
+
+  def favorite
+    @weibo = Weibo.find(params[:id])
+    @weibo.favorite += 1
+    respond_to do |format|
+      if @weibo.save
+        format.js { render :layout => false }
+      else
+
+      end
     end
   end
 end

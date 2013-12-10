@@ -4,36 +4,12 @@
 		<li class="uk-width-medium-3-3">
 			<div class="uk-panel uk-panel-box">
 				<ul class="uk-list">
-					<li>
-						<header class="uk-comment-header account-summary ">
-							<a class="my-comment-avatar"><img class="myavatar" src="<%= @weibo.user.avatarSrc %>" width="54px" alt=""></a>
-							<p class="uk-clearfix">
-								<strong><%= @weibo.user.nickName %></strong> [中天音乐吧] <br>
-								<small class="uk-comment-meta">18 165cm 武昌</small>
-								<small class="uk-align-right"><%= time_ago_in_words(@weibo.created_at) %></small>
-							</p>
-							<p class="uk-clearfix">
-								<!-- <img class="uk-align-medium-left " src="<%= @weibo.user.avatarSrc %>" width="100px" alt=""> -->
-								<a class="uk-thumbnail uk-align-left" href="#modal-<%= @weibo.id %>" data-uk-modal="{target:'#modal-<%= @weibo.id %>'}"><img src="<%= @weibo.user.avatarSrc %>" width="100px"></a>
-								&nbsp;&nbsp;<%= @weibo.content %>
-							</p>
-							<div id="modal-<%= @weibo.id %>" class="uk-modal" style="display: none;">
-								<div class="uk-modal-dialog uk-modal-dialog-frameless" style="margin-left: -0px;margin-top: 100px">
-									<a href="" class="uk-modal-close uk-close"></a>
-									<img src="<%= @weibo.user.avatarSrc %> " alt="">
-								</div>
-							</div>
-							<div>
-								<a class="uk-icon-button uk-icon-heart favorite" data-confirm="确定赞一下吗"></a><%= @weibo.favorite.present? ? @weibo.favorite : "0" %>
-								<a class="uk-icon-button uk-icon-comment comment" data-confirm="确定要评论吗？"></a> 12 
-							</div >
-						</header>
-					</li>
+					<%= render 'weibo' %>
 					<li>
 						<header class="uk-comment-header account-summary ">
 							<%= form_for(@comment, :html => { :class => "uk-form"}) do |f| %>
 							<input name="comment[weibo_id]" type="hidden" value="<%= @comment.weibo_id %>">
-							<input name="comment[user_id]" type="hidden" value="1">							
+							<input name="comment[user_id]" type="hidden" value="">							
 							<div class="uk-form-row">
 								<textarea cols="30" rows="5" placeholder="回复评论" name="comment[content]"></textarea>
 							</div>

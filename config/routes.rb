@@ -4,7 +4,13 @@ Blogme::Application.routes.draw do
   resources :comments
 
 
-  resources :weibos
+  resources :weibos do
+    member do
+      get 'favorite'
+    end
+  end
+
+
   resources :users
 
   resources :albums do

@@ -1,0 +1,15 @@
+<div class="uk-container-center uk-container wrapper white">
+	<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :class => "uk-form"}) do |f| %>
+	<fieldset>
+		<legend>注 册</legend>
+		<%= f.error_notification %>
+		<%= f.input :email, :required => true, :autofocus => true, label_html: { class: 'uk-form-row'}, input_html: { size: 30 }   %>
+		<%= f.input :password, :required => true, label_html: { class: 'uk-form-row'}, input_html: { size: 30 }   %>
+		<%= f.input :password_confirmation, :required => true, label_html: { class: 'uk-form-row'}, input_html: { size: 30 } %>
+		<div class="uk-form-row" style="margin-top:10px;">
+		<%= f.button :submit, "注册", :class => 'uk-button uk-button-success' %>
+		<%= render "devise/shared/links" %>
+		</div>
+	</fieldset>
+	<% end %>
+</div>
