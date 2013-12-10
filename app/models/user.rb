@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+  :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
@@ -13,10 +13,10 @@ class User < ActiveRecord::Base
   has_many :comments
 
   def getAvatar
-    "http://songsm.u.qiniudn.com/myAvatar.png" unless self.avatarSrc
+    self.avatarSrc.present? ? self.avatarSrc : "http://songsm.u.qiniudn.com/myAvatar.png"   
   end
 
   def getNickName
-    self.email.split("@")[0] unless self.nickName
+    self.email.split("@")[0] unless self.nickName.present?
   end
 end
