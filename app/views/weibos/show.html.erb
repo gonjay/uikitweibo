@@ -24,8 +24,8 @@
 					<% if c.user %>
 					<li>
 						<header class="uk-comment-header account-summary ">
-							<a class="my-comment-avatar"><img class="myavatar" src="<%= c.user.avatarSrc %>" width="54px" alt=""></a>
-							<h4 class="uk-comment-title"><%= c.user.nickName %></h4>
+							<a class="my-comment-avatar"><img class="myavatar" src="<%= c.user.getAvatar %>" width="54px" alt=""></a>
+							<h4 class="uk-comment-title"><%= c.user.getNickName %></h4>
 							<div class="uk-comment-meta"><%= c.content %></div>
 							<!-- <p> Written by Super User on 12 April 2012</p> -->
 						</header>

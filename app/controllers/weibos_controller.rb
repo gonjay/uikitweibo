@@ -4,6 +4,7 @@ class WeibosController < ApplicationController
   # GET /weibos.json
   def index
     @weibos = Weibo.includes(:user).limit(10).order("created_at DESC")
+    @upload_token = Qiniu::RS.generate_upload_token :scope => "datescript"
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,12 +27,7 @@ class WeibosController < ApplicationController
   # GET /weibos/new
   # GET /weibos/new.json
   def new
-    @user = User.find_or_create_by_id(params[:userID]) if params[:userID].present?
-    if @user
-      @weibo = @user.weibos.new
-    else
-      @weibo = Weibo.new
-    end
+    @weibo = current_user.weibos.new
 
     respond_to do |format|
       format.html # new.html.erb

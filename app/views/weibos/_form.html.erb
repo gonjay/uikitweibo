@@ -1,10 +1,35 @@
+<script src="<%= root_path %>js/jquery.form.js"></script>
+<script src="<%= root_path %>js/form.js"></script>
+<style type="text/css">
+#myWeiboFile {
+	display:none;
+}
+</style>
 <%= simple_form_for(Weibo.new, :html => { :class => "uk-form"}) do |f| %>
 <input type="hidden" name="weibo[user_id]" value="<%= current_user.id %>">
 <input type="hidden" name="weibo[favorite]" value="0">
+<input type="hidden" name="weibo[imgSrc]" id="weiboImgSrc" value="">
 <div class="uk-form-row">
-  <textarea cols="30" rows="5" placeholder="发布一条动态" name="weibo[content]"></textarea>
+	<textarea cols="30" rows="5" placeholder="发布一条动态" name="weibo[content]"></textarea>
 </div>
 <div class="uk-form-row">
-  <button class="uk-button uk-button-primary" type="submit">发布</button>
+	<button class="uk-button uk-button-primary" type="submit">发布</button>
 </div>
+
 <% end %>
+
+
+
+<form id="imgUploadForm" enctype="multipart/form-data">
+	<div class="uk-form-row">
+		<input name="token" type="hidden" value="<%= @upload_token %>">
+		<input name="file" id="myWeiboFile" type="file" accept="image/x-png, image/gif, image/jpeg">
+	</div>
+
+	<div class="uk-form-row">
+		<a id="myFileButton" class="uk-button"><i class="uk-icon-camera"></i></a>
+	</div>
+	<div class="uk-form-row">
+		<button id="imgUploadFormSubmit" class="uk-button uk-button-primary" type="submit" disabled>上传</button>
+	</div>
+</form>

@@ -1,3 +1,5 @@
+#!/bin/env ruby  
+# encoding: utf-8
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -9,4 +11,12 @@ class User < ActiveRecord::Base
   attr_accessible :avatarSrc, :genderStr, :nickName
   has_many :weibos
   has_many :comments
+
+  def getAvatar
+    "http://songsm.u.qiniudn.com/myAvatar.png" unless self.avatarSrc
+  end
+
+  def getNickName
+    self.email.split("@")[0] unless self.nickName
+  end
 end
