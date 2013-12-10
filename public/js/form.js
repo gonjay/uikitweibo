@@ -7,6 +7,7 @@ $(document).ready(function(){
 		var s = "<div class=\"myAlert uk-alert\">" + $(this).val() + "</div>"
 		$('#myFileButton').replaceWith(s);
 		$('#imgUploadFormSubmit').attr('disabled', false);
+		$('#publishSubmit').hide();
 	});
 
 	$('#imgUploadForm').ajaxForm({
@@ -19,6 +20,7 @@ $(document).ready(function(){
 			$('.myAlert').replaceWith("<a class=\"uk-thumbnail\"><img src="+ imgSrc +" width=\"100px\"></a>");
 			$('#weiboImgSrc').attr('value', imgSrc)
 			$('#imgUploadFormSubmit').hide();
+			$('#publishSubmit').show();
 		}
 	});
 });
