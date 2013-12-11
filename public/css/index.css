@@ -93,3 +93,14 @@
 	img.myavatar{
 		border-radius: 28px;
 	}
+	.error{
+		font-size: smaller;
+		padding: 5px;
+		color: #d85030;
+		background: #fff1f0;
+		border: 1px solid rgba(45,112,145,0.3);
+		border-radius: 4px;
+		margin-left: 10px;
+		-webkit-box-shadow: 2px 2px 2px rgb(162, 162, 162);
+		-moz-box-shadow: 2px 2px 2px rgb(162, 162, 162);
+	}

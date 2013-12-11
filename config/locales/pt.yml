@@ -1,0 +1,4 @@
+pt:
+  activerecord:
+    models:
+      user: 用户

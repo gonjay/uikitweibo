@@ -1,19 +1,18 @@
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :class => "uk-form uk-form-stacked" }) do |f| %>
 <legend>编辑 <%= resource_name.to_s.humanize %></legend>
-<%= f.error_notification %>
-
+<div><%= devise_error_messages! %></div>
 <div class="form-inputs uk-form-row">
-  <%= f.input :nickName, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row' }, label: '用户名<br>'   %>
+  <%= f.input :nickName, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row' }, label: '用户名<br>', input_html: { size: 40 }   %>
 
-  <%= f.input :email, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row' }, label: '邮箱<br>'   %>
+  <%= f.input :email, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row' }, label: '邮箱<br>', input_html: { size: 40 }  %>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
   <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
   <% end %>
 
-  <%= f.input :password, :autocomplete => "off", :hint => "如果不修改就不要动", :required => false, wrapper_html: { class: 'uk-form-row' }, label: '新密码<br>'  %>
-  <%= f.input :password_confirmation, :required => false, wrapper_html: { class: 'uk-form-row' }, label: '确认密码<br>'  %>
-  <%= f.input :current_password, :hint => "需要您的原密码以确认", :required => true, wrapper_html: { class: 'uk-form-row' }, label: '原密码<br>'  %>
+  <%= f.input :password, :autocomplete => "off", :placeholder => "如果不修改就不用填写", :required => false, wrapper_html: { class: 'uk-form-row' }, label: '新密码<br>', input_html: { size: 40 }  %>
+  <%= f.input :password_confirmation, :required => false, wrapper_html: { class: 'uk-form-row' }, label: '确认密码<br>', input_html: { size: 40 }  %>
+  <%= f.input :current_password, :placeholder => "需要您的原密码以确认", :required => true, wrapper_html: { class: 'uk-form-row' }, label: '原密码<br>', input_html: { size: 40 }  %>
 </div>
 
 <div class="form-actions uk-form-row ">
