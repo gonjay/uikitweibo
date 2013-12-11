@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	$('#avatarUpload').click(function(){
+		$('#avatarFile').click();
+	});
+
 	$('#myFileButton').click(function(){
 		$('#myWeiboFile').click();
 	});

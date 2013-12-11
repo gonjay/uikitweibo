@@ -28,14 +28,22 @@
   </div>
   <div class="uk-width-medium-1-2">
     <div class="uk-panel">
-      <%= simple_form_for(current_user, :html => {:class => "uk-form uk-form-stacked" }) do |f| %>
+      <%= simple_form_for(current_user, :html => {:class => "uk-form uk-form-stacked",:multipart => true }) do |f| %>
       <legend>上传头像</legend>
-      <img src="<%= current_user.getAvatar %>" width="100px">
-      <%= f.input :avatarSrc, wrapper_html: { class: 'uk-form-row' }, input_html: { size: 40 }, label: '头像<br>' %>
-      <div class="form-actions uk-form-row ">
-        <%= f.button :submit, "更新", class: 'uk-button uk-button-primary' %>
+      <div class="uk-form-row ">
+        <a id="avatarUpload" class="uk-thumbnail uk-align-left">
+          <img src="<%= current_user.getAvatar %>">
+        </a>
+      </div>
+      <div class="uk-form-row ">
+        <%= f.file_field :photo, id: 'avatarFile' %>
+      </div>
+      <div class="uk-form-row ">
+        <%= f.button :submit, "更新头像", class: 'uk-button uk-button-primary' %>
       </div>
       <% end %>
+      <hr>
     </div>
   </div>
 </div>
+<script src="<%= root_path %>js/form.js"></script>
