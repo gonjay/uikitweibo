@@ -3,12 +3,12 @@
 	<fieldset>
 		<legend>注 册</legend>
 		<div><%= devise_error_messages! %></div>
-		<%= f.input :email, :required => true, :autofocus => true, label_html: { class: 'uk-form-row'}, input_html: { size: 30 }, label: '邮箱<br>'   %>
-		<%= f.input :password, :required => true, label_html: { class: 'uk-form-row'}, input_html: { size: 30 }, label: '密码<br>'   %>
-		<%= f.input :password_confirmation, :required => true, label_html: { class: 'uk-form-row'}, input_html: { size: 30 }, label: '确认密码<br>' %>
+		<%= f.input :nickName, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row' }, label: '昵称<br>', input_html: { size: 30 }   %>
+		<%= f.input :email, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row'}, input_html: { size: 30 }, label: '邮箱<br>'   %>
+		<%= f.input :password, :required => true, wrapper_html: { class: 'uk-form-row'}, input_html: { size: 30 }, label: '密码<br>'   %>
+		<%= f.input :password_confirmation, :required => true, wrapper_html: { class: 'uk-form-row'}, input_html: { size: 30 }, label: '确认密码<br>' %>
 		<div class="uk-form-row" style="margin-top:10px;">
-		<%= f.button :submit, "注册", :class => 'uk-button uk-button-success' %>
-		<%= render "devise/shared/links" %>
+			<%= f.button :submit, "提交注册信息", :class => 'uk-button uk-button-success' %>
 		</div>
 	</fieldset>
 	<% end %>

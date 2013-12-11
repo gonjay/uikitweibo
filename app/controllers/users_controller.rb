@@ -40,7 +40,7 @@ class UsersController < ApplicationController
   # POST /Users
   # POST /Users.json
   def create
-    @user = User.new(params[:User])
+    @user = User.new(params[:user])
 
     respond_to do |format|
       if @user.save
@@ -59,8 +59,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     respond_to do |format|
-      if @user.update_attributes(params[:User])
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+      if @user.update_attributes(params[:user])
+        format.html { redirect_to :back, notice: 'User was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

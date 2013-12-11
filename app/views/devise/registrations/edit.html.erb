@@ -1,23 +1,41 @@
-<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :class => "uk-form uk-form-stacked" }) do |f| %>
-<legend>编辑 <%= resource_name.to_s.humanize %></legend>
-<div><%= devise_error_messages! %></div>
-<div class="form-inputs uk-form-row">
-  <%= f.input :nickName, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row' }, label: '用户名<br>', input_html: { size: 40 }   %>
+<div class="uk-grid">
+  <div class="uk-width-medium-1-2">
+    <div class="uk-panel">
+      <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :class => "uk-form uk-form-stacked" }) do |f| %>
+      <legend>编辑 <%= resource_name.to_s.humanize %></legend>
+      <div><%= devise_error_messages! %></div>
+      <div class="form-inputs uk-form-row">
+        <%= f.input :nickName, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row' }, label: '昵称<br>', input_html: { size: 40 }   %>
 
-  <%= f.input :email, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row' }, label: '邮箱<br>', input_html: { size: 40 }  %>
+        <%= f.input :email, :required => true, :autofocus => true, wrapper_html: { class: 'uk-form-row' }, label: '邮箱<br>', input_html: { size: 40 }  %>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-  <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
-  <% end %>
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+        <% end %>
 
-  <%= f.input :password, :autocomplete => "off", :placeholder => "如果不修改就不用填写", :required => false, wrapper_html: { class: 'uk-form-row' }, label: '新密码<br>', input_html: { size: 40 }  %>
-  <%= f.input :password_confirmation, :required => false, wrapper_html: { class: 'uk-form-row' }, label: '确认密码<br>', input_html: { size: 40 }  %>
-  <%= f.input :current_password, :placeholder => "需要您的原密码以确认", :required => true, wrapper_html: { class: 'uk-form-row' }, label: '原密码<br>', input_html: { size: 40 }  %>
+        <%= f.input :password, :autocomplete => "off", :placeholder => "如果不修改就不用填写", :required => false, wrapper_html: { class: 'uk-form-row' }, label: '新密码<br>', input_html: { size: 40 }  %>
+        <%= f.input :password_confirmation, :required => false, wrapper_html: { class: 'uk-form-row' }, label: '确认密码<br>', input_html: { size: 40 }  %>
+        <%= f.input :current_password, :placeholder => "需要您的原密码以确认", :required => true, wrapper_html: { class: 'uk-form-row' }, label: '原密码<br>', input_html: { size: 40 }  %>
+      </div>
+
+      <div class="form-actions uk-form-row ">
+        <%= f.button :submit, "更新", class: 'uk-button uk-button-primary' %>
+      </div>
+      <% end %>
+      <br>
+      <%= link_to "返回", :back, class: 'uk-button' %>
+    </div>
+  </div>
+  <div class="uk-width-medium-1-2">
+    <div class="uk-panel">
+      <%= simple_form_for(current_user, :html => {:class => "uk-form uk-form-stacked" }) do |f| %>
+      <legend>上传头像</legend>
+      <img src="<%= current_user.getAvatar %>" width="100px">
+      <%= f.input :avatarSrc, wrapper_html: { class: 'uk-form-row' }, input_html: { size: 40 }, label: '头像<br>' %>
+      <div class="form-actions uk-form-row ">
+        <%= f.button :submit, "更新", class: 'uk-button uk-button-primary' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-<div class="form-actions uk-form-row ">
-  <%= f.button :submit, "更新", class: 'uk-button uk-button-primary' %>
-</div>
-<% end %>
-<br>
-<%= link_to "返回", :back, class: 'uk-button' %>
