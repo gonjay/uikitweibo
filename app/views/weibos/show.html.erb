@@ -1,40 +1,39 @@
-<div class="uk-container-center uk-container wrapper white">
-	<ul class="uk-grid uk-text-center" data-uk-grid-margin="">
+<ul class="uk-grid uk-text-center" data-uk-grid-margin="">
 
-		<li class="uk-width-medium-3-3">
-			<div class="uk-panel uk-panel-box">
-				<ul class="uk-list">
-					<%= render 'weibo' %>
-					<li>
-						<header class="uk-comment-header account-summary ">
-							<%= form_for(@comment, :html => { :class => "uk-form"}) do |f| %>
-							<input name="comment[weibo_id]" type="hidden" value="<%= @comment.weibo_id %>">
-							<input name="comment[user_id]" type="hidden" value="">							
-							<div class="uk-form-row">
-								<textarea cols="30" rows="5" placeholder="回复评论" name="comment[content]"></textarea>
-							</div>
-							<div class="uk-form-row">
-								<button class="uk-button" type="submit">回复</button>
-							</div>
-							<% end %>
-						</header>
-					</li>
+	<li class="uk-width-medium-3-3">
+		<div class="uk-panel uk-panel-box">
+			<ul class="uk-list">
+				<%= render 'weibo' %>
+				<li>
+					<header class="uk-comment-header account-summary ">
+						<%= form_for(@comment, :html => { :class => "uk-form"}) do |f| %>
+						<input name="comment[weibo_id]" type="hidden" value="<%= @comment.weibo_id %>">
+						<input name="comment[user_id]" type="hidden" value="">							
+						<div class="uk-form-row">
+							<textarea cols="30" rows="5" placeholder="回复评论" name="comment[content]"></textarea>
+						</div>
+						<div class="uk-form-row">
+							<button class="uk-button" type="submit">回复</button>
+						</div>
+						<% end %>
+					</header>
+				</li>
 
-					<% @weibo.comments.each do |c| %>
-					<% if c.user %>
-					<li>
-						<header class="uk-comment-header account-summary ">
-							<a class="my-comment-avatar"><img class="myavatar" src="<%= c.user.getAvatar %>" width="54px" alt=""></a>
-							<h4 class="uk-comment-title"><%= c.user.getNickName %></h4>
-							<div class="uk-comment-meta"><%= c.content %></div>
-							<!-- <p> Written by Super User on 12 April 2012</p> -->
-						</header>
-					</li>
-					<% end %>
-					<% end %>
-				</ul>
-				<p id="notice"><%= notice %></p>
-			</div>
-		</li>
-	</ul>
-</div>
+				<% @weibo.comments.each do |c| %>
+				<% if c.user %>
+				<li>
+					<header class="uk-comment-header account-summary ">
+						<a class="my-comment-avatar"><img class="myavatar" src="<%= c.user.getAvatar %>" width="54px" alt=""></a>
+						<h4 class="uk-comment-title"><%= c.user.getNickName %></h4>
+						<div class="uk-comment-meta"><%= c.content %></div>
+						<!-- <p> Written by Super User on 12 April 2012</p> -->
+					</header>
+				</li>
+				<% end %>
+				<% end %>
+			</ul>
+			<p id="notice"><%= notice %></p>
+			<%= link_to "返回", :back, class: 'uk-button' %>
+		</div>
+	</li>
+</ul>

@@ -1,25 +1,22 @@
-<div class="uk-container-center uk-container wrapper white">
-  <ul class="uk-grid uk-text-center" data-uk-grid-margin="">
-    <li class="uk-width-medium-3-3">
-      <div class="uk-panel uk-panel-box">
-        <h3>动态</h3>
-        <ul class="uk-list">
-          <li>
-            <header class="uk-comment-header">
-              <% if user_signed_in? %>
-              <%= render 'form' %>
-              <% else %>
-              <%= link_to '发布一条动态', new_weibo_path, :class => 'uk-button uk-button-primary' %>
-              <% end %>
-            </header> 
-          </li>
-          <% @weibos.each do |weibo| %>
-          <% @weibo = weibo %>
-          <%= render 'weibo' %>
-          <% end %>
-        </ul>
-      </div>
-    </li>
-  </ul>
-</div>
-
+<ul class="uk-grid uk-text-center" data-uk-grid-margin="">
+  <li class="uk-width-medium-3-3">
+    <div class="uk-panel uk-panel-box">
+      <h3>动态</h3>
+      <ul class="uk-list">
+        <li>
+          <header class="uk-comment-header">
+            <% if user_signed_in? %>
+            <%= render 'form' %>
+            <% else %>
+            <%= link_to '发布一条动态', new_weibo_path, :class => 'uk-button uk-button-primary' %>
+            <% end %>
+          </header> 
+        </li>
+        <% @weibos.each do |weibo| %>
+        <% @weibo = weibo %>
+        <%= render 'weibo' %>
+        <% end %>
+      </ul>
+    </div>
+  </li>
+</ul>

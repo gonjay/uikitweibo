@@ -1,6 +1,6 @@
 <li id="weibo_<%= @weibo.id %>">
   <header class="uk-comment-header account-summary ">
-    <a class="my-comment-avatar"><img class="myavatar" src="<%= @weibo.user.getAvatar %>" width="54px" alt=""></a>
+    <a class="my-comment-avatar" href="<%= edit_user_registration_path %>"><img class="myavatar" src="<%= @weibo.user.getAvatar %>" width="54px" alt=""></a>
     <p class="uk-clearfix">
       <strong><%= @weibo.user.getNickName %></strong> [中天音乐吧] <br>
       <small class="uk-comment-meta">18 165CM 武昌</small>
@@ -22,7 +22,7 @@
     </div>
     <% else %>
     <p class="uk-clearfix">
-      &nbsp;&nbsp;<%= link_to @weibo.content, weibo %>
+      &nbsp;&nbsp;<%= link_to @weibo.content, weibo_path(@weibo) %>
     </p>
 
     <% end %>

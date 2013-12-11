@@ -4,7 +4,7 @@
         <li class="uk-active"><a href="<%= root_path %>"><i class="uk-icon-home uk-icon-large"></i> <strong>主页</strong></a></li>
         <% if user_signed_in? %>
         <li class="uk-parent" data-uk-dropdown="">
-          <a href=""><i class="uk-icon-user uk-icon-small"></i> 我</a>
+          <a href="<%= edit_user_registration_path %>"><i class="uk-icon-user uk-icon-small"></i> 我</a>
           <div class="uk-dropdown uk-dropdown-navbar">
             <ul class="uk-nav uk-nav-navbar">
               <li><a href=""><i class="uk-icon-external-link "></i> 联系</a></li>
@@ -50,7 +50,7 @@
               <li class="uk-nav-header">Datascripts</li>
               <li class="uk-active"><a href="<%= root_path %>"><i class="uk-icon-home uk-icon-medium"></i> 主页</a></li>
               <% if user_signed_in? %>
-              <li><a href=""><i class="uk-icon-user"></i> 我</a></li>
+              <li><a href="<%= edit_user_registration_path %>"><i class="uk-icon-user"></i> 我</a></li>
               <li><a href=""><i class="uk-icon-external-link"></i> 联系</a></li>
               <li><a href=""><i class="uk-icon-eye-open"></i> 发现</a></li>
 

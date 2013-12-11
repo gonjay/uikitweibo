@@ -13,10 +13,10 @@ class User < ActiveRecord::Base
   has_many :comments
 
   def getAvatar
-    self.avatarSrc.present? ? self.avatarSrc : "http://songsm.u.qiniudn.com/myAvatar.png"   
+    avatarSrc.present? ? avatarSrc : "http://songsm.u.qiniudn.com/myAvatar.png"   
   end
 
   def getNickName
-    self.email.split("@")[0] unless self.nickName.present?
+    nickName.present? ? nickName : email.split("@")[0]
   end
 end
