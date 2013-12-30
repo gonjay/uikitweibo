@@ -13,45 +13,9 @@
 
 ActiveRecord::Schema.define(:version => 20131211160710) do
 
-  create_table "albums", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "imageUrl"
-    t.string   "useType"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer  "useFlag"
-  end
-
-  create_table "apks", :force => true do |t|
-    t.string   "version"
-    t.string   "downloadUrl"
-    t.string   "netType"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
   create_table "comments", :force => true do |t|
     t.integer  "weibo_id"
     t.integer  "user_id"
-    t.string   "content"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "passages", :force => true do |t|
-    t.string   "title"
-    t.text     "content"
-    t.text     "images"
-    t.string   "postUrl"
-    t.string   "newsrecord"
-    t.integer  "psgType"
-    t.string   "tag"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "tags", :force => true do |t|
-    t.string   "name"
     t.string   "content"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

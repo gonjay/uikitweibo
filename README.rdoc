@@ -1,30 +1,18 @@
-== Welcome to Rails
+== 欢迎使用
+一个用来练手的rails项目，主要是因为喜欢http://getuikit.com这个前端框架，想用一下。得益于uikit，这个应用，跑在浏览器上也有不错的体验。
 
-Rails is a web-application framework that includes everything needed to create
-database-backed web applications according to the Model-View-Control pattern.
+== Gem
 
-This pattern splits the view (also called the presentation) into "dumb"
-templates that are primarily responsible for inserting pre-built data in between
-HTML tags. The model contains the "smart" domain objects (such as Account,
-Product, Person, Post) that holds all the business logic and knows how to
-persist themselves to a database. The controller handles the incoming requests
-(such as Save New Account, Update Product, Show Post) by manipulating the model
-and directing data to the view.
-
-In Rails, the model is handled by what's called an object-relational mapping
-layer entitled Active Record. This layer allows you to present the data from
-database rows as objects and embellish these data objects with business logic
-methods. You can read more about Active Record in
-link:files/vendor/rails/activerecord/README.html.
-
-The controller and view are handled by the Action Pack, which handles both
-layers by its two parts: Action View and Action Controller. These two layers
-are bundled in a single package due to their heavy interdependence. This is
-unlike the relationship between the Active Record and Action Pack that is much
-more separate. Each of these packages can be used independently outside of
-Rails. You can read more about Action Pack in
-link:files/vendor/rails/actionpack/README.html.
-
+这个微博应用使用了以下gem:
+* 'devise'(用户管理)
+* 'simple_form'(devise的依赖以及，简单一些form表单的生成)
+* 'mysql2'(生产环境的数据库)
+* 'activerecord-mysql-adapter'(把对象映射到mysql数据库的插件)
+* 'thin'(测试用web服务器)
+* 'unicorn'(生产环境用web服务器)
+* 'qiniu-rs'(七牛云存储来存储用户发送的微博图片)
+* 'carrierwave'(上传组件)
+* "mini_magick"(处理用户上传的头像)
 
 == Getting Started
 
