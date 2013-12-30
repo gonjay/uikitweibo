@@ -23,7 +23,7 @@
 <form id="imgUploadForm" enctype="multipart/form-data">
 	<div class="uk-form-row">
 		<input name="token" type="hidden" value="<%= @upload_token %>">
-		<input name="file" id="myWeiboFile" type="file" accept="image/x-png, image/gif, image/jpeg">
+		<input name="file" id="myWeiboFile" type="file" accept="image/*">
 	</div>
 
 	<div class="uk-form-row">

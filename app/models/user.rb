@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
 
   def getAvatar
     # avatarSrc.present? ? avatarSrc : "http://songsm.u.qiniudn.com/myAvatar.png"   
-    photo_url(:avatar).present? ? photo_url(:avatar) : "http://songsm.u.qiniudn.com/myAvatar.png"
+    photo_url(:avatar).present? ? photo_url(:avatar) : "http://songsm.u.qiniudn.com/myAvatar.png?imageView/1/w/80/h/80"
   end
 
   def getNickName
