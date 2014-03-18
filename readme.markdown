@@ -24,9 +24,7 @@
 	
 	rails s
 	
-## 部署
-使用ubuntu+mysql，需要配置config/database.yml，然后
 
-	RAILS_ENV=production rake db:migrate
-	
-	RAILS_ENV=production unicorn
+## demo
+
+http://evening-brook-6546.herokuapp.com/
