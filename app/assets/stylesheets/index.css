@@ -1,0 +1,106 @@
+	.custom_a {
+		color: #fff;
+	}
+
+	body.style {
+		background-image: url(../images/bg.png);
+		background-attachment: fixed;
+		background-repeat: repeat;
+		background-repeat: no-repeat;
+		background-color: #C0DEED;
+		overflow:auto;
+	}
+
+	.wrapper.white {
+		background: url(../images/wash-white-30.png);
+		padding: 15px;
+		padding-top: 53px;
+	}
+
+	.uk-fixed-navigation {
+		position: fixed;
+		right: 0;
+		left: 0;
+		top: 0;
+		z-index: 1030;
+	}
+
+	.account-summary {
+		min-height: 32px;
+		position: relative;
+		display: block;
+		text-align: left;
+	}
+
+	.account.content {
+		float: left;
+		margin-left: 41px;
+	}
+
+	.fullname {
+		font-weight: bold;
+		color: #333;
+	}
+
+	.size32 {
+		width: 32px;
+		height: 32px;
+		border-radius: 4px;
+	}
+
+	.account-summary .avatar {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.account-summary img {
+		float: left;
+	}
+	.account-divider {
+		margin-top: 13px;
+	}
+	.input-grid {
+		margin-top: 16px;
+	}
+	.input-send {
+		width: 300px;
+	}
+	#send {
+		min-height: 33px;
+	}
+	.send-button-hide {
+		display: none;
+	}
+	a.favorite{
+		color: grey;
+		margin-right: 5px;
+	}
+	a.favorite:hover{
+		color: #BE5757;
+	}
+	a.comment{
+		color: grey;
+		margin-left: 10px;
+	}
+	a.comment:hover{
+		color: #64B1C0;
+	}
+	.my-comment-avatar {
+		margin-right: 12px;
+		float: left;
+		margin-top: 11px;
+	}
+	img.myavatar{
+		border-radius: 28px;
+	}
+	.error{
+		font-size: smaller;
+		padding: 5px;
+		color: #d85030;
+		background: #fff1f0;
+		border: 1px solid rgba(45,112,145,0.3);
+		border-radius: 4px;
+		margin-left: 10px;
+		-webkit-box-shadow: 2px 2px 2px rgb(162, 162, 162);
+		-moz-box-shadow: 2px 2px 2px rgb(162, 162, 162);
+	}

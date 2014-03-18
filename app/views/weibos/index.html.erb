@@ -16,7 +16,9 @@
         <% @weibo = weibo %>
         <%= render 'weibo' %>
         <% end %>
-      </ul>
-    </div>
-  </li>
+        <%= will_paginate @weibos, previous_label:'&lsaquo;', next_label:'&rsaquo;' %>
+      </div>
+    </ul>
+  </div>
+</li>
 </ul>
