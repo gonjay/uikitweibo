@@ -6,20 +6,20 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: myapp_development
+  database: data_development
   pool: 5
   password:
 
-# test:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: store_test
-#   pool: 5
-#   password:
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: data_test
+  pool: 5
+  password:
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: store_test
-#   pool: 5
-#   password:
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: data_production
+  pool: 5
+  password:
