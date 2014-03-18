@@ -20,7 +20,7 @@ $(document).ready(function(){
 		success: function(data)
 		{
 			console.log(data.hash);
-			var imgSrc = "http://datescript.u.qiniudn.com/" + data.hash;
+			var imgSrc = "http://cmsdemo.qiniudn.com/" + data.hash;
 			$('.myAlert').replaceWith("<a class=\"uk-thumbnail\"><img src="+ imgSrc +" width=\"100px\"></a>");
 			$('#weiboImgSrc').attr('value', imgSrc)
 			$('#imgUploadFormSubmit').hide();

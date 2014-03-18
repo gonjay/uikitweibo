@@ -3,8 +3,8 @@ class WeibosController < ApplicationController
   # GET /weibos
   # GET /weibos.json
   def index
-    @weibos = Weibo.includes(:user).limit(10).order("created_at DESC")
-    @upload_token = Qiniu::RS.generate_upload_token :scope => "datescript"
+    @weibos = Weibo.includes(:user).order("created_at DESC").paginate(:page => params[:page], :per_page => params[:per_page])
+    @upload_token = Qiniu::RS.generate_upload_token :scope => "cmsdemo"
 
     respond_to do |format|
       format.html # index.html.erb
