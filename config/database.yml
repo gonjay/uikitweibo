@@ -20,6 +20,6 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: data_production
+  database: dcpnqv6ibint11
   pool: 5
-  password:
+  password: SCgZO98LDpoTi0EauY6hLLEALe
